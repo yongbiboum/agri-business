@@ -1,0 +1,22 @@
+{
+	"projectName": "agri-business",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "agri-business CSS",
+		"file": "agri-business.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/"
+		}]
+	}, {
+		"name": "agri-business JS",
+		"file": "agri-business.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/"
+		}]
+	}],
+	"resources" : []
+}

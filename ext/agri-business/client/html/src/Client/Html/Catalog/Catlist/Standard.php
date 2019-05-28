@@ -208,27 +208,27 @@ class Standard
         $view->context = $this->getContext();
         $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
 
+        $view->catalogProducts = [] ;
         $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
-        $manager2 = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'product' );
-        $this->catid =$catid;
 
-        $search = $manager->createSearch();
+        $view->catid =$catid;
 
-        $catlist = $manager->searchItems( $search,['media','text','price'],$total);
+
         $list = $manager -> getPath($catid);
         $catalogItem = $manager->getItem( $catid, $domains );
-        $catalogItem1 = $manager->getItem( $catid, $domains );
+
         $manager2 = \Aimeos\Controller\Frontend\Factory::createController(  $this->getContext(), 'product' );
+
         $filter = $manager2->createFilter( 'relevance', '+', 0, 48 );
         $filter = $manager2->addFilterCategory( $filter, $catid );
+
         $products = $manager2->searchItems( $filter, ['attribute', 'media', 'price', 'text'] );
-        $manager2 = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'product' );
+
         $this->addMetaItems( $catalogItem, $expire, $tags );
+
         $view->catalogProducts = $products ;
-        $searchs = $view->param('f_sort');
-        if($searchs!== null ) {
-            $view->catalogProducts = $this->createList($searchs);
-        }
+
+
         $view->catalogItem = $catalogItem ;
         //dd(collect($catalogItem->getRefItems('product'))->first());
         $tree=$manager->getTree($catid,[],\Aimeos\MW\Tree\Manager\Base::LEVEL_TREE)->getNode()->getChildren();

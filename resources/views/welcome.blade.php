@@ -196,61 +196,104 @@
                 </div>
             </div>
             <!-- End List Service -->
-               <div class="choise-intro3 text-center">
-                    <h2 class="title30 font-bold">Qui Sont Concernés Par La Plateforme  ?</h2>
-                    <p class="color2">Les acteurs qui interviennent dans la plateforme ...</p>
-                </div>
-                <div class="fruit-farmers">
-                    <div class="container">
-                        <div class="farm-slider banner-slider">
-                            <div class="wrap-item group-navi" data-transition="fade" data-pagination="false" data-navigation="true" data-itemscustom="[[0,1]]">
-                                <div class="item-farm item-slider">
-                                    <div class="farm-infos animated" data-animated="bounceInLeft">
-                                        <h2 class="title18"><b><a href="#" class="black">CLIENTS - AGRO INDUSTRIES - GROSSISTES - REVENDEURS</a></b></h2>
-                                        <div class="farm-cat">
-                                            <a href="#" class="silver">A LA QUÊTE DE PRODUITS</a>
-                                        </div>
-                                        <p class="desc">Meet the maker of our bread – our fabulous baker boy alberto Trombin.
-                                            He creates superb bread in their Melbourne-based bread-quarters.</p>
-                                        <p class="desc"> Lorem ipsum dolor sit amet consectur, don magnet i accetior sum it refectur </p>
-                                        <p class="desc"> </p>
-                                        <br ><br >
-                                        <div class="product-extra-link">
-                                            <a href="#" class="addcart-link">En savoir plus</a>
+
+            <div class="container">
+                <div class="decate-farmer">
+                    <h2 class="text-center font-bold title30">Qui Sont Concernés Par La Plateforme  ?</h2>
+                    <div class="decate-slider">
+                        <div class="wrap-item" data-pagination="false" data-itemscustom="[[0,1],[990,2]]" data-autoplay="false">
+                            <div class="item-decate">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-thumb banner-adv zoom-out">
+                                            <a href="#" class="adv-thumb-link">
+                                                <img src="/packages/assets/images/home/home2/fille.png" alt="" />
+                                                <img src="/packages/assets/images/page/farm1-1.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="farm-thumbs banner-adv zoom-image fade-out-in animated" data-animated="bounceInLeft">
-                                        <a href="#" class="adv-thumb-link"><img src="/packages/assets/images/home/home2/farm11.jpg" alt="" /></a>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-info">
+                                            <h3 class="title18 font-bold"><a href="#">Fanbong Fam</a></h3>
+                                            <p class="color">Chartered Financial Advisor</p>
+                                            <p class="desc">Born in Belmont, CA, Kathleen attended UC Riverside where she earned her B.S. </p>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fruit-farmer">
-                    <div class="container">
-                        <div class="farm-slider banner-slider">
-                            <div class="wrap-item group-navi" data-transition="fade" data-pagination="false" data-navigation="true" data-itemscustom="[[0,1]]">
-                                <div class="item-farm item-slider">
-
-                                    <div class="farm-info animated" data-animated="bounceInLeft">
-                                        <h2 class="title18"><b><a href="#" class="black">AGRICULTEURS RURAUX - ENTREPRENEURS - INDUSTRIELS</a></b></h2>
-                                        <div class="farm-cat">
-                                            <a href="#" class="silver">A LA QUÊTE DES GRANDS MARCHES D'ECOULEMENT</a>
-                                        </div>
-                                        <p class="desc">Meet the maker of our bread – our fabulous baker boy alberto Trombin.
-                                            He creates superb bread in their Melbourne-based bread-quarters.</p>
-                                        <p class="desc"> Lorem ipsum dolor sit amet consectur, don magnet i accetior sum it refectur in dolor
-                                        un seculum
-                                        </p>
-                                        <p class="desc"> </p>
-                                        <br ><br >
-                                        <div class="product-extra-link">
-                                            <a href="#" class="addcart-link">Devenir producteur</a>
+                            <div class="item-decate">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-thumb banner-adv zoom-out">
+                                            <a href="#" class="adv-thumb-link">
+                                                <img src="/packages/assets/images/page/farm2-1.jpg" alt="" />
+                                                <img src="/packages/assets/images/page/farm2-1.jpg" alt="" />
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="farm-thumb banner-adv zoom-image fade-out-in animated" data-animated="bounceInRight">
-                                        <a href="#" class="adv-thumb-link"><img src="/packages/assets/images/home/home2/fille.png" alt="" /></a>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-info">
+                                            <h3 class="title18 font-bold"><a href="#">Annabel Croft</a></h3>
+                                            <p class="color">Chartered Financial Advisor</p>
+                                            <p class="desc">Born in Belmont, CA, Kathleen attended UC Riverside where she earned her B.S. </p>
+                                            <div class="social-network">
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-fb.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-tw.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-pt.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-gp.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-decate">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-thumb banner-adv zoom-out">
+                                            <a href="#" class="adv-thumb-link">
+                                                <img src="/packages/assets/images/page/farm1-2.jpg" alt="" />
+                                                <img src="/packages/assets/images/page/farm1-2.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-info">
+                                            <h3 class="title18 font-bold"><a href="#">Leonel Messi</a></h3>
+                                            <p class="color">Chartered Financial Advisor</p>
+                                            <p class="desc">Born in Belmont, CA, Kathleen attended UC Riverside where she earned her B.S. </p>
+                                            <div class="social-network">
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-fb.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-tw.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-pt.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-gp.png" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-decate">
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-thumb banner-adv zoom-out">
+                                            <a href="#" class="adv-thumb-link">
+                                                <img src="/packages/assets/images/page/farm2-2.jpg" alt="" />
+                                                <img src="/packages/assets/images/page/farm2-2.jpg" alt="" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-6">
+                                        <div class="decate-info">
+                                            <h3 class="title18 font-bold"><a href="#">Ariel Robbel</a></h3>
+                                            <p class="color">Chartered Financial Advisor</p>
+                                            <p class="desc">Born in Belmont, CA, Kathleen attended UC Riverside where she earned her B.S. </p>
+                                            <div class="social-network">
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-fb.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-tw.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-pt.png" alt=""></a>
+                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-gp.png" alt=""></a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -258,6 +301,7 @@
                     </div>
                 </div>
             </div>
+              </div>
             <!-- End List Adv -->
 
             <!-- End Product Best Sale -->

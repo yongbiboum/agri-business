@@ -127,7 +127,7 @@ $errors = $this->get( 'summaryErrorCodes', [] );
                 <?php if( $modify && ( $product->getFlags() & \Aimeos\MShop\Order\Item\Base\Product\Base::FLAG_IMMUTABLE ) == 0 ) : ?>
                     <?php if( $product->getQuantity() > 1 ) : ?>
                         <?php $basketParams = array( 'b_action' => 'edit', 'b_position' => $position, 'b_quantity' => $product->getQuantity() - 1 ); ?>
-                        <a class="qty-down "  href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
+                        <a class="qty-downs "  href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
                             <i class="fa fa-angle-down"aria-hidden="true"></i>
                         </a>
                     <?php else : ?>
@@ -146,7 +146,7 @@ $errors = $this->get( 'summaryErrorCodes', [] );
                     />
 
                     <?php $basketParams = array( 'b_action' => 'edit', 'b_position' => $position, 'b_quantity' => $product->getQuantity() + 1 ); ?>
-                    <a class="qty-up " href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
+                    <a class="qty-ups " href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
                         <i class="fa fa-angle-up" aria-hidden="true"></i>
                     </a>
 
@@ -170,16 +170,10 @@ $errors = $this->get( 'summaryErrorCodes', [] );
         <?php endif; ?>
 
     </tr>
-    <tr>
-        <td class="actions" colspan="6">
-            <div class="coupon">
-                <label for="coupon_code">Coupon:</label>
-                <input type="text" placeholder="Coupon code" value="" id="coupon_code" class="input-text" name="coupon_code">
-                <input type="submit" value="Apply Coupon" name="apply_coupon" class="button bg-color">
-            </div>
-            <input type="submit" value="Update Cart" name="update_cart" class="button bg-color">
-        </td>
-    </tr>
-    </tbody>
+
     <?php endforeach; ?>
+
+    </tbody>
+
+
 </table>

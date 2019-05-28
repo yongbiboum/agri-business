@@ -27,6 +27,7 @@ return [
         'checkout-confirm' => [ 'checkout/confirm' ],
         'checkout-index' => [ 'checkout/standard' ],
         'checkout-update' => [ 'checkout/update' ],
+        'catalog-searchs' => ['basket/mini','catalog/searchs','catalog/filter','catalog/footer','catalog/logo','catalog/stage','catalog/slide','catalog/nav','catalog/categories' ],
 	],
 
 	/*

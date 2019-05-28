@@ -158,8 +158,7 @@ if( isset( $this->detailProductItem ) )
 
                                         <a href="#" class="addcart-link">Achat</a>
                                         <a href="#" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></a>
-                                        <a href="#" class="compare-link"><i class="fa fa-compress" aria-hidden="true"></i><span>Compare</span></a>
-                                    </div>
+                                        </div>
                                 </li>
                                     <?php if( $basketSite ) : ?>
                                         <input type="hidden" name="<?= $this->formparam( 'site' ) ?>" value="<?= $enc->attr( $basketSite ) ?>" />
@@ -176,16 +175,10 @@ if( isset( $this->detailProductItem ) )
                             </ul>
                                 </form>
                             <p class="desc info-extra">
-                                <label>Category:</label><a href="#" class="color">Fruits Fresh</a>
+                                <label>Categorie :</label><a href="#" class="color"><?php $enc->attr( $this->param('catid') ); ?></a>
                             </p>
                             <p class="desc info-extra">
-                                <label>ID Product:</label><span class="color">UK15800PNT</span>
-                            </p>
-                            <p class="desc info-extra">
-                                <label>Share:</label>
-                                <a href="#" class="silver"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="silver"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="silver"><i class="fa fa-instagram"></i></a>
+                                <label>ID Produit :</label><span class="color"><?= $enc->attr( $this->detailProductItem->getId() ); ?></span>
                             </p>
                         </div>
                     </div>
@@ -196,69 +189,15 @@ if( isset( $this->detailProductItem ) )
                 <div class="title-tab-detail">
                     <ul class="title-tab1 list-inline-block">
                         <li class="active"><a href="#tab1" class="title14" data-toggle="tab" aria-expanded="true">Description</a></li>
-                        <li class=""><a href="#tab2" class="title14" data-toggle="tab" aria-expanded="false">Additional</a></li>
-                        <li class=""><a href="#tab3" class="title14" data-toggle="tab" aria-expanded="false">Reviews(5)</a></li>
+                        <li class=""><a href="#tab3" class="title14" data-toggle="tab" aria-expanded="false">Reviews</a></li>
                     </ul>
                 </div>
                 <div class="tab-content">
                     <div id="tab1" class="tab-pane active">
                         <div class="detail-descript">
-                            <h2 class="title30 color">Product Description</h2>
-                            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vel maximus lacus. Duis ut mauris eget justo dictum tempus sed vel tellus. Vestibulum sit amet maximus turpis. </p>
-                            <p class="desc">Cras suscipit placerat dignissim. Morbi cursus, mauris sed placerat rutrum, ante risus dictum elit, dictum feugiat lectus lacus eget felis. Suspendisse nec ipsum in sapien faucibus convallis nec sit amet metus. Phasellus at lacus non libero molestie euismod non ut ligula. Etiam nec turpis eget odio laoreet elementum et vitae risus.</p>
-                        </div>
-                    </div>
-                    <div id="tab2" class="tab-pane">
-                        <div class="detail-addition">
-                            <table class="table table-bordered table-striped">
-                                <tbody>
-                                <tr>
-                                    <td><p class="desc">Frame Material: Wood</p></td>
-                                    <td><p class="desc">Seat Material: Wood</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Adjustable Height: No</p></td>
-                                    <td><p class="desc">Seat Style: Saddle</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Distressed: No</p></td>
-                                    <td><p class="desc">Custom Made: No</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Number of Items Included: 1</p></td>
-                                    <td><p class="desc">Folding: No</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Stackable: No</p></td>
-                                    <td><p class="desc">Cushions Included: No</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Arms Included: No</p></td>
-                                    <td>
-                                        <div class="product-more-info">
-                                            <p class="desc">Legs Included: Yes</p>
-                                            <ul class="list-none">
-                                                <li><a href="#">Leg Material: Wood</a></li>
-                                                <li><a href="#">Number of Legs: 4</a></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Footrest Included: Yes</p>	</td>
-                                    <td><p class="desc">Casters Included: No</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Nailhead Trim: No</p></td>
-                                    <td><p class="desc">Weight Capacity: 225 Kilogramm</p></td>
-                                </tr>
-                                <tr>
-                                    <td><p class="desc">Commercial Use: No</p></td>
-                                    <td><p class="desc">Country of Manufacture: Vietnam</p></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                            <h2 class="title30 color">Description du produit</h2>
+                            <p class="desc"><?= collect($this->detailProductItem->getRefItems( 'text', 'long' ))->first()->getContent() ?>  </p>
+                             </div>
                     </div>
                     <div id="tab3" class="tab-pane">
                         <div class="content-tags-detail">
@@ -322,7 +261,7 @@ if( isset( $this->detailProductItem ) )
             </div>
             <!-- End Tabs Detail -->
             <div class="related-product">
-                <h2 class="title30 font-bold">Related Products</h2>
+                <h2 class="title30 font-bold">Produits associés</h2>
                 <div class="related-product-slider product-slider">
                     <div class="wrap-item group-navi" data-navigation="true" data-pagination="false" data-itemscustom="[[0,1],[560,2],[768,3],[990,4]]">
                         <div class="item-product item-product-grid text-center">

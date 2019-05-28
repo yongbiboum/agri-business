@@ -27,7 +27,7 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
 ?>
 
-<?php dd($this->catalogProducts) ;if($this->catalogProducts!="no") : ?>
+<?php if($this->catalogProducts!="no") : ?>
 
     <?php
     $productItems = $this->catalogProducts;

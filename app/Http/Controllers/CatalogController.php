@@ -15,4 +15,14 @@ class CatalogController extends Controller
         $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'catalog-choose' );
         return view('shop::catalog.catlist', $params);
     }
+    public function Action()
+    {
+        $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'catalog-searchs' );
+        return view('shop::catalog.searchs', $params);
+    }
+    public function listsAction()
+    {
+        $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'catalog-list' );
+        return view('shop::catalog.list', $params);
+    }
 }

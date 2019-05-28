@@ -102,17 +102,8 @@ $enc = $this->encoder();
 
 
 ?>
-<div class="col-md-5 col-sm-5 col-xs-12" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ); ?>">
+<div class="col-md-5 col-sm-5 col-xs-12"  data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ); ?>">
 
-    <form class="search-form pull-left"
-              method="GET" action="<?= $enc->attr( $this->url( $listTarget, $listController, $listAction, $listParams, [], $listConfig ) ); ?>">
-			<!-- catalog.filter.csrf -->
-			<?= $this->csrf()->formfield(); ?>
-			<!-- catalog.filter.csrf -->
-
-			<?= $this->block()->get( 'catalog/filter/search' ); ?>
-
-		</form>
-
+    <?php include('search-body-standard.php'); ?>
 
 </div>

@@ -105,22 +105,24 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
                 <a href="#" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
             <div class="product-info">
+                <a href="<?= $url2; ?>">
                 <h3 class="product-title">
-                    <a href="<?= $url2; ?>"><?= $enc->html( $catalogItemId->getName(), $enc::TRUST ); ?></a>
+                    <?= $enc->html( $catalogItemId->getName(), $enc::TRUST ); ?>
                 </h3>
                 <h5 >
-                <a href="<?= $url2; ?>">Stock Total : <?= $enc->html( $stocklevel, $enc::TRUST ); ?> <?= $unité ?></a>
+                Stock Total : <?= $enc->html( $stocklevel, $enc::TRUST ); ?> <?= $unité ?>
                 </h5>
                 <h5 >
                     <?php if ($producteurs > (int)'1'):?>
-                    <a href="<?= $url2; ?>"><?= $enc->html( $producteurs, $enc::TRUST ); ?> Producteurs </a>
+                    <?= $enc->html( $producteurs, $enc::TRUST ); ?> Producteurs
                     <?php else :?>
-                    <a href="<?= $url2; ?>"><?= $enc->html( $producteurs, $enc::TRUST ); ?> Producteur </a>
+                    <?= $enc->html( $producteurs, $enc::TRUST ); ?> Producteur
                     <?php endif; ?>
             </h5>
+                </a>
                 <div class="product-price" data-prodid="<?= $enc->attr( $id ); ?>"
                      data-prodcode="<?= $enc->attr( $catalogItemId->getCode() ); ?>">
-                    <ins class="color"> <h5 >Prix moyen :   <?= $prices; ?> FCFA /Kg </h5> </ins>
+                    <ins class="color"> <h5 >Prix moyen :   <?= $this->number($prices,0); ?> FCFA /Kg </h5> </ins>
                 </div>
             </div>
         </div>

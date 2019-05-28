@@ -21,18 +21,23 @@ $suggestConfig = $this->config( 'client/html/catalog/suggest/url/config', [] );
 
 $suggestUrl = $enc->attr( $this->url( $suggestTarget, $suggestController, $suggestAction, [], [], $suggestConfig ) );
 
-
+$phrase= "Rechercher produit";
+$names = 'name';
 ?>
-<?php $this->block()->start( 'catalog/filter/search' ); ?>
+<form class="search-form pull-left"
+      method="GET" action="<?= route('recherche' ); ?>">
+    <!-- catalog.filter.csrf -->
+    <?= $this->csrf()->formfield(); ?>
+    <!-- catalog.filter.csrf -->
+
 
 		<input onblur="if (this.value=='') this.value = this.defaultValue" onfocus="if (this.value==this.defaultValue) this.value = ''"
-                type="text"
-			name="<?= $name; ?>" value="Recherche "
+            type="text" class="searchs"
+			name="<?= $name; ?>" value="<?= $phrase; ?>"
 			data-url="<?= $suggestUrl; ?>" data-hint="<?= $hint; ?>"
-		/><!--
-		--><!--
-		--><input type="submit"  value=""   />
+		/>
 
+        <input type="submit" value=""   />
 
-<?php $this->block()->stop(); ?>
-<?= $this->block()->get( 'catalog/filter/search' ); ?>
+</form>
+

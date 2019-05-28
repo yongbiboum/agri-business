@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f8db1bb-e241-481f-b347-b884b06e42da" name="Default" comment="" />
+    <list default="true" id="6f8db1bb-e241-481f-b347-b884b06e42da" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Searchs/Factory.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Searchs/Standard.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/body-standard.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/header-standard.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/items.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/stagelist.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/shop/catalog/catlist.blade.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/resources/views/vendor/shop/catalog/searchs.blade.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CatalogController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/CatalogController.php" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" afterPath="$PROJECT_DIR$/app/User.php" />
+      <change beforePath="$PROJECT_DIR$/config/shop.php" afterPath="$PROJECT_DIR$/config/shop.php" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/detail-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/detail-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/items-body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/items-body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/stagelist-body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/stagelist-body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/detail/body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/detail/body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/search-body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/search-body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/items-body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/items-body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/stagelist-body-standard.php" afterPath="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/stagelist-body-standard.php" />
+      <change beforePath="$PROJECT_DIR$/public/packages/assets/css/theme.css" afterPath="$PROJECT_DIR$/public/packages/assets/css/theme.css" />
+      <change beforePath="$PROJECT_DIR$/public/packages/assets/js/custom.js" afterPath="$PROJECT_DIR$/public/packages/assets/js/custom.js" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" afterPath="$PROJECT_DIR$/routes/web.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,111 +49,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="items-body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/items-body-standard.php">
+      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-laravel/src/helpers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/body-standard.php">
+      <file leaf-file-name="controller.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-core/controller/common/config/controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="31" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items-body-standard.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/items-body-standard.php">
+      <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <marker date="1558705990044" expanded="true" signature="1711:1982" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="1776:1982" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="4570:4933" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="4651:4786" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="4972:6004" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="5015:5146" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="5167:5309" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="5331:5697" ph="..." />
-                <marker date="1558705990044" expanded="true" signature="5779:5985" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Factory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Factory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="109">
+              <caret line="54" column="68" lean-forward="false" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shop.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/shop.php">
+      <file leaf-file-name="web.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Agent.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Agent.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="22" column="90" lean-forward="false" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stagelist-body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/stagelist-body-standard.php">
+      <file leaf-file-name="Client.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Client.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="374">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/body-standard.php">
+      <file leaf-file-name="Producteur.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Producteur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
+            <state relative-caret-position="459">
+              <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="items-body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/items-body-standard.php">
+      <file leaf-file-name="Kernel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
+            <state relative-caret-position="483">
+              <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stagelist-body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/stagelist-body-standard.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="body-standard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/body-standard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="238">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -135,62 +160,81 @@
       <find>.color</find>
       <find>.product-extra-link</find>
       <find>choi</find>
+      <find>btn-b</find>
+      <find>suggest</find>
+      <find>sug</find>
+      <find>sear</find>
+      <find>autocomplete</find>
+      <find>basket-m</find>
+      <find>sea</find>
+      <find>searc</find>
+      <find>submi</find>
+      <find>logi</find>
+      <find>sub</find>
+      <find>for</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\agri-business\ext\</dir>
+      <dir>C:\xampp\htdocs\agri-business\vendor\aimeos</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/vendor/shop/catalog/detail.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/shop/basket/index.blade.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Slide/Factory.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Nav/Factory.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Logo/Factory.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Footer/Factory.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Factory.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Footer/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Lists/Stagelist/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Logo/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Nav/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Slide/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/body-standard.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/detail/body-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/header-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/detail-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/body-standard.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Standard.php" />
-        <option value="$PROJECT_DIR$/public/packages/assets/css/less/theme.less" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/logo/body-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/slide/body-standard.php" />
-        <option value="$PROJECT_DIR$/resources/views/app.blade.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/nav/body-standard.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/footer/body-standard.php" />
-        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Catsearch/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/body-standard.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/catsearch-body-standard.php" />
         <option value="$PROJECT_DIR$/public/packages/assets/css/less/general.less" />
-        <option value="$PROJECT_DIR$/public/packages/assets/css/theme.css" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/search-body-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/stagelist-body-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/items-body-standard.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/items-body-standard.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Factory.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CatalogController.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/shop/catalog/categories.blade.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/body-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/items-body-standard.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/shop/catalog/list.blade.php" />
-        <option value="$PROJECT_DIR$/config/shop.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/stagelist-body-standard.php" />
-        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/stagelist-body-standard.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Factory.php" />
         <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/body-standard.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/shop/catalog/catlist.blade.php" />
+        <option value="$PROJECT_DIR$/public/packages/assets/css/theme.css" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/detail/body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/detail-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/basket/standard/body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Searchs/Factory.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/shop/catalog/search.blade.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/items-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/items-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/stagelist-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/stagelist-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/stagelist-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/items-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/body-standard.php" />
+        <option value="$PROJECT_DIR$/config/shop.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/items.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/search-body-standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Searchs/Standard.php" />
+        <option value="$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/stagelist.php" />
+        <option value="$PROJECT_DIR$/public/packages/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CatalogController.php" />
+        <option value="$PROJECT_DIR$/resources/views/vendor/shop/base.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/app/User.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Admin.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Agent.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Client.php" />
+        <option value="$PROJECT_DIR$/app/Http/Middleware/Producteur.php" />
+        <option value="$PROJECT_DIR$/app/Http/Kernel.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
       </list>
     </option>
   </component>
@@ -295,11 +339,12 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="147" />
-    <option name="y" value="6" />
+    <option name="x" value="407" />
+    <option name="y" value="123" />
     <option name="width" value="1040" />
     <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -315,6 +360,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,11 +390,37 @@
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Auth" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Http" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Middleware" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="database" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="migrations" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -425,20 +498,6 @@
               <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Categories" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Categories" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Catsearch" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -464,33 +523,20 @@
               <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Footer" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Logo" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Nav" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Searchs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -512,66 +558,7 @@
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Slide" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Decorator" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="basket" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="basket" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="standard" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -658,18 +645,7 @@
               <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="logo" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nav" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="searchs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -688,10 +664,7 @@
               <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="slide" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -767,7 +740,7 @@
               <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Lists" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Suggest" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -777,27 +750,6 @@
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ai-client-html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="basket" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="ai-client-html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="basket" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="standard" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -818,7 +770,7 @@
               <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="lists" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="detail" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -828,7 +780,8 @@
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="filter" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -838,8 +791,71 @@
               <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="html" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="summary" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="suggest" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JsonApi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ext" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ai-client-jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jsonapi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Client" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JsonApi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Catalog" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -872,6 +888,25 @@
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="themes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="elegance" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -890,6 +925,14 @@
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="shop" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="packages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -901,6 +944,13 @@
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="auth" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -943,6 +993,11 @@
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="storage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -950,6 +1005,13 @@
               <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos-core" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
@@ -966,12 +1028,28 @@
               <item name="aimeos-laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos-laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="agri-business" type="b2602c69:ProjectViewProjectNode" />
+              <item name="agri-business" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="aimeos-laravel" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1016,29 +1094,31 @@
       <updated>1558493159362</updated>
       <workItem from="1558493161480" duration="6549000" />
       <workItem from="1558501104110" duration="66094000" />
-      <workItem from="1558686061974" duration="17362000" />
+      <workItem from="1558686061974" duration="21313000" />
+      <workItem from="1558797024936" duration="46054000" />
+      <workItem from="1559031105128" duration="898000" />
+      <workItem from="1559032637159" duration="23682000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90005000" />
+    <option name="totallyTimeSpent" value="164590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25787964" sideWeight="0.49358973" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352435" sideWeight="0.49358973" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19054054" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15114613" sideWeight="0.50641024" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21216217" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15114613" sideWeight="0.50641024" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1061,162 +1141,92 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="20" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/packages/assets/css/libs/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="4" column="120102" lean-forward="false" selection-start-line="4" selection-start-column="120102" selection-end-line="4" selection-end-column="120102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/mail/html/themes/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="110" column="0" lean-forward="true" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/packages/assets/css/less/theme.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="182" column="0" lean-forward="false" selection-start-line="182" selection-start-column="0" selection-end-line="182" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/logo/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="true" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/footer/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" lean-forward="true" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="275" column="53" lean-forward="false" selection-start-line="275" selection-start-column="53" selection-end-line="275" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/items-body-list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/packages/assets/css/less/general.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="916" column="24" lean-forward="false" selection-start-line="916" selection-start-column="4" selection-end-line="916" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/packages/assets/css/theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="946" column="18" lean-forward="false" selection-start-line="946" selection-start-column="18" selection-end-line="946" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/filter/supplier-body-standard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/nav/body-standard.php">
+    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/filter/tree-body-standard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="37" lean-forward="false" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="448">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/body-standard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="281">
+          <caret line="104" column="41" lean-forward="true" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/search-body-standard.php">
+    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/filter/body-standard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="346">
+          <caret line="100" column="24" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Categories/Catsearch/Standard.php">
+    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/filter/search-body-standard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/categories/catsearch-body-standard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="51">
+          <caret line="3" column="135" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="135" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/header-standard.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Authenticate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Searchs/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="35" column="79" lean-forward="true" selection-start-line="35" selection-start-column="79" selection-end-line="35" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1558494295338" expanded="true" signature="9:22" ph="..." />
+            <marker date="1558494295338" expanded="true" signature="34:43" ph="..." />
+            <marker date="1558494295338" expanded="true" signature="299:316" ph="..." />
+            <marker date="1558494295338" expanded="true" signature="419:438" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/stagelist-body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/detail/image-partial-standard.php">
+    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/stagelist.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1224,29 +1234,112 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/src/Client/Html/Catalog/Lists/Factory.php">
+    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Searchs/Standard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state relative-caret-position="328">
+          <caret line="209" column="40" lean-forward="true" selection-start-line="209" selection-start-column="40" selection-end-line="209" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Nav/Factory.php">
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/src/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="179">
+          <caret line="826" column="4" lean-forward="false" selection-start-line="826" selection-start-column="4" selection-end-line="826" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Factory.php">
+    <entry file="file://$PROJECT_DIR$/ext/ai-admin-jqadm/admin/jqadm/themes/combo.jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="451">
+          <caret line="72" column="37" lean-forward="true" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/header-standard.php">
+    <entry file="file://$PROJECT_DIR$/node_modules/jquery/src/manipulation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="461" column="4" lean-forward="false" selection-start-line="461" selection-start-column="4" selection-end-line="461" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/packages/aimeos/shop/themes/aimeos-detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="11" column="26144" lean-forward="false" selection-start-line="11" selection-start-column="26144" selection-end-line="11" selection-end-column="26144" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/packages/aimeos/shop/themes/aimeos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="1022" column="0" lean-forward="true" selection-start-line="1022" selection-start-column="0" selection-end-line="1022" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/filter/search-body-standard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/body-standard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/searchs/items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="43" column="28" lean-forward="true" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/shop/catalog/searchs.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding>
+            <marker date="1558962302962" expanded="true" signature="9:21" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="33:48" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="142:156" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="279:291" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="342:356" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="409:427" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="485:498" ph="..." />
+            <marker date="1558962302962" expanded="true" signature="553:568" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1254,131 +1347,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
+    <entry file="file://$PROJECT_DIR$/public/packages/assets/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="6" lean-forward="false" selection-start-line="97" selection-start-column="6" selection-end-line="97" selection-end-column="6" />
+        <state relative-caret-position="224">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/slide/body-standard.php">
+    <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-laravel/src/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="187">
+          <caret line="171" column="39" lean-forward="true" selection-start-line="171" selection-start-column="39" selection-end-line="171" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-laravel/src/Aimeos/Shop/Controller/CatalogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="50" lean-forward="true" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="275">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CatalogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+        <state relative-caret-position="122">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/shop/catalog/categories.blade.php">
+    <entry file="file://$PROJECT_DIR$/config/shop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding>
-            <marker date="1558693091077" expanded="true" signature="9:21" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="33:48" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="179:193" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="316:328" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="379:393" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="446:464" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="522:535" ph="..." />
-            <marker date="1558693091077" expanded="true" signature="590:605" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="150" column="0" lean-forward="false" selection-start-line="150" selection-start-column="0" selection-end-line="150" selection-end-column="0" />
+        <state relative-caret-position="363">
+          <caret line="30" column="6" lean-forward="true" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/items-body-list.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/debug/Exception/FatalErrorException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/catalog/lists/pagination-standard.php">
+    <entry file="file://$PROJECT_DIR$/storage/framework/views/f833de52f9acdfa64c38a107e7618f8c26dc2163.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/basket/standard/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="130" column="15" lean-forward="false" selection-start-line="130" selection-start-column="15" selection-end-line="130" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/common/summary/detail-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="457" column="0" lean-forward="false" selection-start-line="457" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/ai-client-html/client/html/templates/common/summary/service-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="220" column="23" lean-forward="true" selection-start-line="220" selection-start-column="23" selection-end-line="220" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Lists/Stagelist/Standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="68" column="0" lean-forward="true" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Shop/Standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="206" column="10" lean-forward="false" selection-start-line="206" selection-start-column="10" selection-end-line="206" selection-end-column="10" />
+        <state relative-caret-position="272">
+          <caret line="38" column="31" lean-forward="true" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/shop/catalog/list.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="true" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
           <folding>
             <marker date="1558706398574" expanded="true" signature="9:21" ph="..." />
             <marker date="1558706398574" expanded="true" signature="33:48" ph="..." />
@@ -1392,93 +1420,193 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/shop.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/vendor/shop/base.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding>
+            <marker date="1559047306220" expanded="true" signature="9:14" ph="..." />
+            <marker date="1559047306220" expanded="true" signature="26:41" ph="..." />
+            <marker date="1559047306220" expanded="true" signature="2067:2083" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="749" column="0" lean-forward="true" selection-start-line="749" selection-start-column="0" selection-end-line="749" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="47" column="34" lean-forward="false" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
+          <folding>
+            <marker date="1558613768911" expanded="true" signature="596:611" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="661:676" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="3030:3047" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="3833:3847" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4138:4150" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4445:4459" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4561:4579" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4608:4621" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4650:4664" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4693:4702" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4787:4802" ph="..." />
+            <marker date="1558613768911" expanded="true" signature="4818:4834" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/packages/assets/css/theme.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="5592" column="1" lean-forward="false" selection-start-line="5592" selection-start-column="1" selection-end-line="5592" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/packages/assets/js/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="517" column="21" lean-forward="true" selection-start-line="517" selection-start-column="21" selection-end-line="517" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="70" column="19" lean-forward="true" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1559052167347" expanded="true" signature="5007:5024" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="8698:8714" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="9106:9150" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="9290:9304" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="9444:9465" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="9614:9639" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="10133:10180" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="10372:10396" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="10545:10573" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="11297:11331" ph="..." />
+            <marker date="1559052167347" expanded="true" signature="11571:11601" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-laravel/src/config/shop.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-laravel/src/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-laravel/src/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/aimeos/aimeos-core/controller/common/config/controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="54" column="68" lean-forward="false" selection-start-line="54" selection-start-column="68" selection-end-line="54" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Producteur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Client.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" column="90" lean-forward="false" selection-start-line="22" selection-start-column="90" selection-end-line="22" selection-end-column="90" />
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/stagelist-body-standard.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Agent.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="57" lean-forward="false" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
+        <state relative-caret-position="374">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/body-standard.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="466">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/stagelist-body-standard.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="483">
+          <caret line="67" column="0" lean-forward="true" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/src/Client/Html/Catalog/Catlist/Factory.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="211">
+          <caret line="35" column="17" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/items-body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="41" column="40" lean-forward="true" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/lists/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="31" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="36" column="29" lean-forward="true" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/catlist/items-body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="64" column="41" lean-forward="false" selection-start-line="64" selection-start-column="41" selection-end-line="64" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ext/agri-business/client/html/templates/catalog/shop/items-body-standard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <marker date="1558705990044" expanded="true" signature="1711:1982" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="1776:1982" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="4570:4933" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="4651:4786" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="4972:6004" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="5015:5146" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="5167:5309" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="5331:5697" ph="..." />
-            <marker date="1558705990044" expanded="true" signature="5779:5985" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>

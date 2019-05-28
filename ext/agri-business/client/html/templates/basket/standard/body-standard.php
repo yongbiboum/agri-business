@@ -81,37 +81,30 @@ $priceTaxvalue = '0.00';
                     <th>Sous-total</th>
                     <td>
                         <strong class="amount">
-                            <?=  $this->number( $priceValue, 0 ), $priceCurrency ; ?>
+                            <?=  $enc->html( sprintf( $priceFormat,$this->number( $priceValue, 0 ), $priceCurrency)) ; ?>
                         </strong>
                     </td>
                 </tr>
                 <tr class="shipping">
                     <th>Livraison</th>
                     <td>
-                        <ul class="list-none" id="shipping_method">
-                            <li>
-                                <input type="radio" class="shipping_method" value="local_delivery" id="shipping_method_0_local_delivery" data-index="0" name="shipping_method[0]">
-                                <label for="shipping_method_0_local_delivery">Local Delivery (Free)</label>
-                            </li>
-                            <li>
-                                <input type="radio" class="shipping_method" value="local_pickup" id="shipping_method_0_local_pickup" data-index="0" name="shipping_method[0]">
-                                <label for="shipping_method_0_local_pickup">Local Pickup (Free)</label>
-                            </li>
-                        </ul>
+                        <strong class="list-none" id="shipping_method">
+                            <label for="shipping_method_0_local_delivery">
+                                <?=  $enc->html( sprintf( $priceFormat,$this->number( $priceService, 0 ), $priceCurrency)) ; ?></label>
+                        </strong>
                     </td>
                 </tr>
                 <tr class="order-total">
                     <th>Total</th>
                     <td>
                         <strong>
-                                    <span class="amount">
-                                        <?= $enc->html( sprintf( $priceFormat, $this->number( $priceValue + $priceService + $priceTaxvalue, 0 ), $priceCurrency ) ); ?>
-                                    </span>
+                            <span class="amount">
+                                <?= $enc->html( sprintf( $priceFormat, $this->number( $priceValue + $priceService + $priceTaxvalue, 0 ), $priceCurrency ) ); ?>
+                            </span>
                         </strong>
-                        <?php if( $modify ) : ?>
-                    <td class="action"></td>
-                    <?php endif; ?>
                     </td>
+                        <?php if( $modify )  ?>
+                    <td class="action"></td>
                 </tr>
                 </tbody>
             </table>

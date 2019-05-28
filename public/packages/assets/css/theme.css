@@ -5217,7 +5217,13 @@ body .shop-button {
 .detail-qty .qty-down {
   left: 20px;
 }
+.detail-qty .qty-downs {
+  left: 20px;
+}
 .detail-qty .qty-up {
+  right: 20px;
+}
+.detail-qty .qty-ups {
   right: 20px;
 }
 .list-product-group {

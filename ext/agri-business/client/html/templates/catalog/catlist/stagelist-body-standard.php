@@ -1,7 +1,16 @@
 
 
+<?php if(!empty($this->catalogProducts))  ?>
+
+    <?php
+
+    $productItems = $this->catalogProducts;
+    $text='';
+    $prods = collect($productItems)->count();
+
+    ?>
 <div class="shop-pagibar clearfix">
-    <p class="desc silver pull-left">Résultats 1–9 sur 10</p>
+    <p class="desc silver pull-left"> <?= $prods ;?> Résultats </p>
     <ul class="wrap-sort-view list-inline-block pull-right">
         <li>
             <div class="sort-bar">

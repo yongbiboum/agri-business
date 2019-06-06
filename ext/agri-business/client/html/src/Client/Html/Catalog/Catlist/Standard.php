@@ -202,7 +202,6 @@ class Standard
     public function addData( \Aimeos\MW\View\Iface $view, array &$tags = [], &$expire = null )
     {
 
-        $view = parent::addData( $view, $tags, $expire );
         $catcode = $view->param( 'code' );
         $catid = $view->param( 'id' );
         $view->context = $this->getContext();
@@ -212,6 +211,7 @@ class Standard
         $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
 
         $view->catid =$catid;
+        $view->code =$catcode;
 
 
         $list = $manager -> getPath($catid);

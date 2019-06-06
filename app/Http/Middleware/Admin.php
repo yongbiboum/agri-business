@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Illuminate\Support\Facades\Auth;
 
 class Admin
 {
@@ -25,7 +26,7 @@ class Admin
             return redirect('/producteur');
         }
         else {
-            return redirect('/client');
+            return redirect('/login');
         }
     }
 }

@@ -121,7 +121,7 @@
         <div class="content-page">
             <div class="container">
                 <div class="shop-banner banner-adv line-scale zoom-image">
-                    <a href="#" class="adv-thumb-link"><img src="/packages/assets/images/page/about.jpg" alt="" /></a>
+                    <a href="#" class="adv-thumb-link"><img src="/packages/assets/images/inscrition.png" alt="" /></a>
                     <div class="banner-info">
                         <h2 class="title30 color">Connexion/Inscription</h2>
                         <div class="bread-crumb white"><a href="#" class="white">Accueil</a><span></span></div>
@@ -129,7 +129,6 @@
                 </div>
                 <!-- ENd Banner -->
                 <div class="register-content-box">
-                    <h2 class="title30 font-bold text-uppercase text-center">Connexion/Inscription</h2>
                     <div class="row">
                         <div class="col-md-6 col-sm-6 col-ms-12">
                             <div class="check-billing">
@@ -188,22 +187,54 @@
                                         </div>
                                     </form>
 
-                                    <form class="block-register">
-                                        <h2 class="title24 title-form-account">REGISTER</h2>
+                                    <form class="block-register" method="POST" action="{{ route('register') }}">
+                                        @csrf
+                                        <h2 class="title24 title-form-account">Inscription</h2>
                                         <p>
-                                            <label>Username <span class="required">*</span></label>
-                                            <input type="text" name="username" />
+                                            <label for="name">Nom utilisateur <span class="required">*</span></label>
+                                            <input type="text" id="name"  class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
+                                                   name="name" value="{{ old('name') }}" required  />
+
+                                            @if ($errors->has('name'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('name') }}</strong>
+                                                </span>
+                                            @endif
                                         </p>
                                         <p>
-                                            <label>Email address <span class="required">*</span></label>
-                                            <input type="text" name="password" />
+                                            <label for="email">Adresse e-mail <span class="required">*</span></label>
+                                            <input type="email" id="email"
+                                                   class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
+                                                   name="email" value="{{ old('email') }}" required />
+                                            @if ($errors->has('email'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('email') }}</strong>
+                                                </span>
+                                            @endif
+                                        </p>
+
+                                            <input type="hidden" name="role" value="client" />
+
+                                        <p>
+                                            <label for="password">Mot de passe <span class="required">*</span></label>
+                                            <input id="password" type="password"
+                                                   class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                                   name="password" required />
+                                            @if ($errors->has('password'))
+                                                <span class="invalid-feedback" role="alert">
+                                                     <strong>{{ $errors->first('password') }}</strong>
+                                                 </span>
+                                            @endif
                                         </p>
                                         <p>
-                                            <label>Password <span class="required">*</span></label>
-                                            <input type="text" name="password" />
+                                            <label for="password-confirm">Confirmer mot de passe <span class="required">*</span></label>
+                                            <input id="password-confirm" type="password"
+                                                   class="form-control"
+                                                   name="password_confirmation" required />
+
                                         </p>
                                         <p>
-                                            <input type="submit" class="register-button" name="register" value="Register">
+                                            <input type="submit" class="register-button" name="register" value="Valider">
                                         </p>
                                     </form>
                                 </div>
@@ -213,10 +244,12 @@
                         <div class="col-md-6 col-sm-6 col-ms-12">
                             <div class="check-address">
                                 <div class="form-my-account check-register text-center">
-                                    <h2 class="title24 title-form-account">Register</h2>
-                                    <p class="desc">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
-                                    <a href="#" class="shop-button bg-color login-to-register" data-login="Login" data-register="Register">Register</a>
-                                    <p class="desc title12 silver"><i>Click to switch Register/Login</i></p>
+                                    <h2 class="title24 title-form-account">Inscription</h2>
+                                    <p class="desc"> S'inscrire dans notre plateforme vous donne droit à un accès à une interface d'administration
+                                        de vos commandes (Hiistorique, tracking des livraisons, produits préférés etc.), à des infos en temps réel sur
+                                        l'évolution des bonnes pratiques de l'agribusiness en afrique et dans le monde.</p>
+                                    <a href="#" class="shop-button bg-color login-to-register" data-login="Se connecter" data-register="S'inscrire">Inscription</a>
+                                    <p class="desc title12 silver"><i>Cliquez ici pour switcher entre inscription/connexion</i></p>
                                 </div>
                             </div>
                         </div>

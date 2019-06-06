@@ -8,13 +8,13 @@
  * @subpackage Html
  */
 
-namespace Aimeos\Client\Html\Catalog\AccountAside;
+namespace Aimeos\Client\Html\Account\AccountAside;
 
 class Standard
-    extends \Aimeos\Client\Html\Catalog\Base
+    extends \Aimeos\Client\Html\Common\Client\Factory\Base
     implements \Aimeos\Client\Html\Common\Client\Factory\Iface
 {
-    private $subPartPath = 'client/html/catalog/accountaside/standard/subparts';
+    private $subPartPath = 'client/html/account/accountaside/standard/subparts';
 
     private $subPartNames = [];
     private $tags = [];
@@ -26,14 +26,14 @@ class Standard
         $prefixes = array( 'd' );
         $context = $this->getContext();
 
-        $confkey = 'client/html/catalog/accountaside';
+        $confkey = 'client/html/account/accountaside';
 
         if( ( $html = $this->getCached( 'body',$this->catid ?? $uid, $prefixes, $confkey ) ) === null )
         {
             $view = $this->getView();
 
-            $tplconf = 'client/html/catalog/accountaside/standard/template-body';
-            $default = 'catalog/accountaside/body-standard.php';
+            $tplconf = 'client/html/account/accountaside/standard/template-body';
+            $default = 'account/accountaside/body-standard.php';
 
             try
             {
@@ -87,14 +87,14 @@ class Standard
     public function getHeader( $uid = '' )
     {
         $prefixes = array( 'd' );
-        $confkey = 'client/html/catalog/accountaside';
+        $confkey = 'client/html/account/accountaside';
 
 
         if( ( $html = $this->getCached( 'header', $uid, $prefixes, $confkey ) ) === null )
         {
             $view = $this->getView();
-            $tplconf = 'client/html/catalog/accountaside/standard/template-header';
-            $default = 'catalog/acountaside/header-standard.php';
+            $tplconf = 'client/html/account/accountaside/standard/template-header';
+            $default = 'account/accountaside/header-standard.php';
             try
             {
                 if( !isset( $this->view ) ) {
@@ -127,7 +127,7 @@ class Standard
 
     public function getSubClient( $type, $name = null )
     {
-        return $this->createSubClient( 'catalog/accountaside/' . $type, $name );
+        return $this->createSubClient( 'account/accountaside/' . $type, $name );
     }
 
 
@@ -136,7 +136,7 @@ class Standard
     {
         $content = parent::modifyBody( $content, $uid );
 
-        return $this->replaceSection( $content, $this->getView()->csrf()->formfield(), 'catalog.accountaside.csrf' );
+        return $this->replaceSection( $content, $this->getView()->csrf()->formfield(), 'account.accountaside.csrf' );
     }
 
     protected function getSubClientNames()
@@ -151,7 +151,7 @@ class Standard
         $view->banniere = "/packages/assets";
         //$catid = is_null($view->fsort) ? 1:$view->param( 'id' );
         //$view->catid = $catid;
-        $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
+        $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'account' );
         $search = $manager->createSearch();
         $catlist = $manager->searchItems( $search,['media','text','price'],$total);
         $tree=$manager->getTree(2,['media','text'],\Aimeos\MW\Tree\Manager\Base::LEVEL_TREE)->getNode()->getChildren();

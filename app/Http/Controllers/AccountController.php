@@ -9,10 +9,13 @@
 namespace App\Http\Controllers;
 
 
-class AccountController
+class AccountController extends Controller
 {
     public function indexAction(){
         $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'account-index' );
         return view('shop::account.index', $params);
+    }
+    public function clientAction(){
+        return view('shop::account.clientlte');
     }
 }

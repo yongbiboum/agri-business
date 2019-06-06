@@ -4,16 +4,35 @@
     <aside class="sidebar-left sidebar-shop">
 
     <div class="widget widget-category">
-        <h2 class="title18 title-widget font-bold">Mon compte</h2>
+        <h2 class="title18 title-widget font-bold"><a href="/compte" class="">Mon compte</a></h2>
          <ul class="list-none wg-list-cat">
 
 
-             <li><a href="#">Mes Commandes</a></li>
-             <li><a href="#">Mes Informations</a></li>
-             <li><a href="#">Produits favoris</a></li>
-             <li><a href="#">Mes Adresses</a></li>
-             <li><a href="#">Mes Réductions</a></li>
-             <li><a href="#">Se Déconnecter</a></li>
+             <li>
+                 <a href="#"><img src="/packages/assets/images/shop/commande.png" alt="" class="">
+                        Mes Commandes
+                 </a>
+             </li>
+             <li>
+                 <a href="#"><img src="/packages/assets/images/shop/infos.png" alt="" class="">
+                     Mes Informations</a>
+             </li>
+             <li><a href="#"><img src="/packages/assets/images/shop/hand.png" alt="" class="">
+                     Demander produit(s) </a></li>
+             <li><a href="#"><img src="/packages/assets/images/shop/historique.png" alt="" class="">
+                     Historique Achats</a>
+             </li>
+             <li><a href="#"><img src="/packages/assets/images/shop/livraison.png" alt="" class="">
+                     Gestion livraisons</a>
+             </li>
+             <li><a href="#"><img src="/packages/assets/images/shop/favoris.png" alt="" class="">
+                     Produits favoris</a></li>
+             <li><a href="#"><img src="/packages/assets/images/shop/map.png" alt="" class="">
+                     Mes Adresses</a></li>
+             <li><a href="#"><img src="/packages/assets/images/shop/reduction.png" alt="" class="">
+                     Mes Réductions</a></li>
+             <li><a href="#"><img src="/packages/assets/images/shop/logout.png" alt="" class="">
+                     Se Déconnecter</a></li>
 
 
          </ul>

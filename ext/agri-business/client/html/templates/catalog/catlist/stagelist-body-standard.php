@@ -7,8 +7,9 @@
     $productItems = $this->catalogProducts;
     $text='';
     $prods = collect($productItems)->count();
-
+    $code = $this->code;
     ?>
+<h2 class="title30 color text-center"><?= $code ;?>  </h2>
 <div class="shop-pagibar clearfix">
     <p class="desc silver pull-left"> <?= $prods ;?> Résultats </p>
     <ul class="wrap-sort-view list-inline-block pull-right">
@@ -23,12 +24,6 @@
                         <option value="">Notes</option>
                     </select>
                 </div>
-            </div>
-        </li>
-        <li>
-            <div class="view-bar">
-                <a class="grid-view active" href="#"></a>
-                <a class="list-view" href="#"></a>
             </div>
         </li>
     </ul>

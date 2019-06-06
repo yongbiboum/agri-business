@@ -31,21 +31,22 @@ Route::match( array( 'GET', 'POST' ), '/search', array(
     'as' => 'recherche',
     'uses' => 'CatalogController@Action'
 ));
-Route::get('/admin', function(){
-    echo "Hello Admin";
-})->middleware('Admin');
 
 Route::match( array( 'GET', 'POST' ), '/agent', array(
     'as' => 'control_account',
-    'uses' => 'ControlAccountController@indexAction'
-))->middleware('auth','Agent');
+    'uses' => 'AgentAccountController@controlAction'
+))->middleware('auth','agent');
 
 Route::match( array( 'GET', 'POST' ), '/comptepro', array(
     'as' => 'producteur_account',
     'uses' => 'ProdAccountController@indexAction'
-))->middleware('auth','Producteur');
+))->middleware('auth','producteur');
 
 Route::match( array( 'GET', 'POST' ), '/compte', array(
     'as' => 'aimeos_shop_account',
     'uses' => 'AccountController@indexAction'
-))->middleware('auth','Client');
+))->middleware('auth','client');
+Route::match( array( 'GET', 'POST' ), '/client', array(
+    'as' => 'client',
+    'uses' => 'AccountController@clientAction'
+))->middleware('auth','client');

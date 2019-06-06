@@ -45,10 +45,28 @@
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <ul class="info-account list-inline-block pull-right">
-                                @if (session('status')):
-                                <li><a href="#"><span class="color"><i class="fa fa-user-o"></i></span>Mon Compte</a></li>
-                                @else :
-                                <li><a href="/register"><span class="color"><i class="fa fa-key"></i></span>Connexion</a></li>
+                                @if(Auth::user())
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="/compte" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        <span class="color"><i class="fa fa-user-o"></i></span>{{ Auth::user()->name }} <span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/compte">
+                                            <span class="color"> <i class="fa fa-user-o"></i> Mon compte</span>
+                                        </a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            <span class="color">  <i class="fas fa-sign-out-alt"></i> Déconnexion</span>
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li> @else
+                                <li><a href="/login"><span class="color"><i class="fa fa-key"></i></span>Connexion</a></li>
                                 <li><a href="/login"><span class="color"><i class="fa fa-check-circle-o"></i></span>Inscription</a></li>
                                 @endif
                             </ul>

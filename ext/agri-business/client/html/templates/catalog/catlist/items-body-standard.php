@@ -3,6 +3,7 @@
 $enc = $this->encoder();
 $position = $this->get( 'itemPosition' );
 $productItems = $this->get( 'itemsProductItems', [] );
+$params = $this->get( 'params', [] );
 
 $detailTarget = $this->config( 'client/html/catalog/detail/url/target' );
 $detailController = $this->config( 'client/html/catalog/detail/url/controller', 'catalog' );
@@ -17,6 +18,12 @@ $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 
 $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
+$list = $this->config( 'client/html/catalog/actions/list', array( 'pin', 'watch', 'favorite' ) );
+
+$pinTarget = $this->config( 'client/html/catalog/session/pinned/url/target' );
+$pinController = $this->config( 'client/html/catalog/session/pinned/url/controller', 'catalog' );
+$pinAction = $this->config( 'client/html/catalog/session/pinned/url/action', 'detail' );
+$pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] );
 
 /**
  * Created by PhpStorm.
@@ -52,6 +59,8 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
         $price = $productItemid->getRefItems( 'price', null, 'default' );
         $priceUrl= collect($price)->first()->getValue() ;
+
+        $pin = $this->url( $pinTarget, $pinController, $pinAction, array( 'pin_action' => 'add', 'pin_id' => $productItem->getId() ) + $params, $pinConfig ) ;
 
         $unite = 'Kg';
         if ($stocklevel > (float)'1000.0'){
@@ -97,7 +106,7 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
                     <div class="product-rating" style="width:75%"></div>
                 </div>
                 <div class="product-extra-link">
-                    <a href="#" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Souhait</span></a>
+                    <a href="<?= $pin ?>" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Favoris</span></a>
                     <a href="<?= $url; ?>" id="achat" class="addcart-link">Achat</a>
                 </div>
             </div>

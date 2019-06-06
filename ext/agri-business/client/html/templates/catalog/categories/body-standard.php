@@ -11,14 +11,17 @@
                 $catalog = $this->tree;
                 foreach ($catalog as $item => $catnode):
                     $manager = \Aimeos\MShop\Factory::createManager( $this->context, 'catalog' );
+                    //$manager2 = \Aimeos\MShop\Factory::createManager( $this->context, 'product' );
                     $tree=$manager->getTree($catnode->getId(),[],\Aimeos\MW\Tree\Manager\Base::LEVEL_TREE)->getNode()->getChildren();
                     $nbre = collect($tree)->count();
 
                     $url = route('agri_categories', ["id"=>$catnode->getId() , "code"=>$catnode->getCode()]);
-
+                    $catItem = $manager->getItem($catnode->getId(),['media']);
+                    $icon = collect($catItem->getRefItems("media"))->first()->getUrl();
+                   // dd($icon);
                 ?>
 
-                <li><a href="<?= $url ?>"><?= $catnode->getLabel() ;?></a><span class="color"><?= $nbre ?></span></li>
+                <li><img src="<?= asset($icon) ; ?>" alt="" class="">  <a href="<?= $url ?>"><?= $catnode->getLabel() ;?></a><span class="color"><?= $nbre ?></span></li>
             <?php endforeach;?>
             </ul>
         </div>

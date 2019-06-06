@@ -8,7 +8,9 @@ $productItems = $this->catalogProducts;
 $text='';
 $prods = (int)collect($productItems)->count();
 $s="s";
+$code = $this->input ;
 ?>
+    <h2 class="title30 color text-center">Recherche de :  "<?= $code ;?>"  </h2>
 <div class="shop-pagibar clearfix">
     <p class="desc silver pull-left"> <?= $prods ;?> Résultat<?php if ($prods > (int)'1'): ?><?=$s;?><?php endif ;?> </p>
     <ul class="wrap-sort-view list-inline-block pull-right">

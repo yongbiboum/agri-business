@@ -63,10 +63,29 @@
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <ul class="info-account list-inline-block pull-right">
-                                @if (session('status')):
-                                <li><a href="#"><span class="color"><i class="fa fa-user-o"></i></span>Mon Compte</a></li>
-                                 @else :
-                                <li><a href="/register"><span class="color"><i class="fa fa-key"></i></span>Connexion</a></li>
+                                @if (Auth::user())
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="/compte" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        <span class="color"><i class="fa fa-user-o"></i></span>{{ Auth::user()->name }} <span class="caret"></span>
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/compte">
+                                           <span class="color"> <i class="fa fa-user-o"></i> Mon compte</span>
+                                        </a>
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            <span class="color">  <i class="fas fa-sign-out-alt"></i> Déconnexion</span>
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                                 @else
+                                <li><a href="/login"><span class="color"><i class="fa fa-key"></i></span>Connexion</a></li>
                                 <li><a href="/login"><span class="color"><i class="fa fa-check-circle-o"></i></span>Inscription</a></li>
                                 @endif
                             </ul>
@@ -208,16 +227,18 @@
                                         <div class="decate-thumb banner-adv zoom-out">
                                             <a href="#" class="adv-thumb-link">
                                                 <img src="/packages/assets/images/home/home2/fille.png" alt="" />
-                                                <img src="/packages/assets/images/page/farm1-1.jpg" alt="" />
-                                            </a>
+                                                <img src="/packages/assets/images/home/home2/fille.png" alt="" />
+                                               </a>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <div class="decate-info">
-                                            <h3 class="title18 font-bold"><a href="#">Fanbong Fam</a></h3>
-                                            <p class="color">Chartered Financial Advisor</p>
+                                            <h3 class="title18 font-bold"><a href="#">Agriculteurs, entrepreneurs agricoles</a></h3>
+                                            <p class="color">En quête de marchés d'écoulement</p>
                                             <p class="desc">Born in Belmont, CA, Kathleen attended UC Riverside where she earned her B.S. </p>
-
+                                            <div class="product-extra-link">
+                                                <a href="/login" id="achat" class="addcart-link">Devenir producteur</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -227,21 +248,18 @@
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <div class="decate-thumb banner-adv zoom-out">
                                             <a href="#" class="adv-thumb-link">
-                                                <img src="/packages/assets/images/page/farm2-1.jpg" alt="" />
-                                                <img src="/packages/assets/images/page/farm2-1.jpg" alt="" />
-                                            </a>
+                                                <img src="/packages/assets/images/shop/homme.png" alt="" />
+                                                <img src="/packages/assets/images/shop/homme.png" alt="" />
+                                               </a>
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <div class="decate-info">
-                                            <h3 class="title18 font-bold"><a href="#">Annabel Croft</a></h3>
-                                            <p class="color">Chartered Financial Advisor</p>
+                                            <h3 class="title18 font-bold"><a href="#">Agro-industries, revendeurs ...</a></h3>
+                                            <p class="color">En quête de produits de qualité à des prix homologués</p>
                                             <p class="desc">Born in Belmont, CA, Kathleen attended UC Riverside where she earned her B.S. </p>
-                                            <div class="social-network">
-                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-fb.png" alt=""></a>
-                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-tw.png" alt=""></a>
-                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-pt.png" alt=""></a>
-                                                <a href="#" class="float-shadow"><img src="/packages/assets/images/icon/icon-gp.png" alt=""></a>
+                                            <div class="product-extra-link">
+                                                <a href="/list"  id="achat" class="addcart-link">Faire un achat</a>
                                             </div>
                                         </div>
                                     </div>

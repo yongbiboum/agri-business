@@ -9,7 +9,7 @@
  */
 
 
-namespace Aimeos\Client\Html\Catalog\AccountAside;
+namespace Aimeos\Client\Html\Account\AccountAside;
 
 
 
@@ -20,20 +20,20 @@ class Factory
     public static function createClient( \Aimeos\MShop\Context\Item\Iface $context, $name = null )
     {
         if( $name === null ) {
-            $name = $context->getConfig()->get( 'client/html/catalog/accountaside/name', 'Standard' );
+            $name = $context->getConfig()->get( 'client/html/account/accountaside/name', 'Standard' );
         }
 
         if( ctype_alnum( $name ) === false )
         {
-            $classname = is_string( $name ) ? '\\Aimeos\\Client\\Html\\Catalog\\accountaside\\' . $name : '<not a string>';
+            $classname = is_string( $name ) ? '\\Aimeos\\Client\\Html\\Account\\accountaside\\' . $name : '<not a string>';
             throw new \Aimeos\Client\Html\Exception( sprintf( 'Invalid characters in class name "%1$s"', $classname ) );
         }
 
         $iface = '\\Aimeos\\Client\\Html\\Iface';
-        $classname = '\\Aimeos\\Client\\Html\\Catalog\\accountaside\\' . $name;
+        $classname = '\\Aimeos\\Client\\Html\\Account\\accountaside\\' . $name;
 
         $client = self::createClientBase( $context, $classname, $iface );
-        $client = self::addClientDecorators( $context, $client, 'catalog/accountaside' );
+        $client = self::addClientDecorators( $context, $client, 'account/accountaside' );
 
         return $client->setObject( $client );
     }

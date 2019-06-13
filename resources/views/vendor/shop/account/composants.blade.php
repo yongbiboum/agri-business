@@ -39,7 +39,11 @@
 @stop
 
 @section('aimeos_body')
-    <?= $aibody['account/accountlist'] ?>
+    <?php //if (request('composant') == "favoris"):  ?>
+
+    <?php// $aibody['account/favorite'] ?>
+    <?php //endif; ?>
+    <?= $aibody['account/composants'] ?>
 
 @stop
 

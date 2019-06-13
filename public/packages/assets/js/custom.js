@@ -17,6 +17,45 @@ window.$ = $;
 
 });
 $(document).ready(function(){ $("#achat").click(function() { window.location=$(this).attr('href'); }); });
+//$(document).ready(function(){ $("#wishlist-link").click(function() { window.location=$(this).attr('href'); }); });
+
+
+function createOverlay() {
+
+    var overlay = $(document.createElement("div"));
+    overlay.addClass("aimeos-overlay");
+    overlay.fadeTo(1000, 0.5);
+    $("body").append(overlay);
+}
+
+
+$(document).ready(function() {
+    $("#wishlist-link").on("click",
+        function (ev) {
+            createOverlay();
+            $.ajax({
+                url: $(this).attr("href"),
+                dataType: 'html',
+                headers: {
+                    "X-Requested-With": "jQuery"
+                }
+            }).done(function (data) {
+
+                var doc = document.createElement("html");
+                doc.innerHTML = data;
+                var content = $(".account-favorite", doc);
+
+                if( content.length > 0 ) {
+                    Aimeos.createContainer(content);
+                } else {
+                    $("html").replaceWith(doc);
+                }
+            });
+
+        }
+    );
+});
+
 
 $('#tags li').click ( function(){
     window.location=$(this).attr('href'); });

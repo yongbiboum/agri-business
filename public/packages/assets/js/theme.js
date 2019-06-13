@@ -13,12 +13,13 @@ function toggle_tab(){
 			});
 		});
 	}
-}	
+}
 //Popup Wishlist
 function popup_wishlist(){
 	$('.wishlist-link').on('click',function(event){
 		event.preventDefault();
-		$('.wishlist-mask').fadeIn();
+		window.location=$(this).attr('href');
+        $('.wishlist-mask').fadeIn();
 		var counter = 5;
 		var popup;
 		popup = setInterval(function() {
@@ -92,13 +93,13 @@ function fixed_header(){
 			$('.header-ontop').removeClass('fixed-ontop');
 		}
 	}
-} 
+}
 //Slider Background
 function background(){
 	$('.bg-slider .item-slider').each(function(){
 		var src=$(this).find('.banner-thumb a img').attr('src');
 		$(this).css('background-image','url("'+src+'")');
-	});	
+	});
 }
 function animated(){
 	$('.banner-slider .owl-item').each(function(){
@@ -182,7 +183,7 @@ function background_image(){
 	if($('.banner-background').length>0){
 		$('.banner-background').each(function(){
 			var i_url = $(this).find('.image-background').attr("src");
-			$(this).css('background-image','url("'+i_url+'")');	
+			$(this).css('background-image','url("'+i_url+'")');
 		});
 	}
 }
@@ -269,7 +270,7 @@ jQuery(document).ready(function(){
 	detail_gallery();
 	//Wishlist Popup
 	popup_wishlist();
-	//Menu Responsive 
+	//Menu Responsive
 	rep_menu();
 	//Offset Menu
 	offset_menu();
@@ -294,11 +295,11 @@ jQuery(document).ready(function(){
 				media : {},
 				buttons : {}
 			}
-		});	
+		});
 	}
 	//Light Box
 	if($('.fancybox').length>0){
-		$('.fancybox').fancybox();	
+		$('.fancybox').fancybox();
 	}
 	//Back To Top
 	$('.scroll-top').on('click',function(event){
@@ -307,13 +308,13 @@ jQuery(document).ready(function(){
 	});
 	//Shop The Look
 	$('.box-hover-dir').each( function() {
-		$(this).hoverdir(); 
+		$(this).hoverdir();
 	});
 });
 //Window Load
-jQuery(window).on('load',function(){ 
+jQuery(window).on('load',function(){
 	//Pre Load
-	$('body').removeClass('preload'); 
+	$('body').removeClass('preload');
 	//Owl Carousel
 	if($('.wrap-item').length>0){
 		$('.wrap-item').each(function(){
@@ -324,7 +325,7 @@ jQuery(window).on('load',function(){
 				lazyLoad:true,
 				itemsCustom:data.itemscustom,
 				autoPlay:data.autoplay,
-				transitionStyle:data.transition, 
+				transitionStyle:data.transition,
 				paginationNumbers:data.paginumber,
 				beforeInit:background,
 				afterAction:animated,
@@ -369,7 +370,7 @@ jQuery(window).on('load',function(){
 				slick_control();
 			});
 		});
-	}	
+	}
 	//Day Countdown
 	if($('.days-countdown').length>0){
 		$(".days-countdown").TimeCircles({
@@ -399,7 +400,7 @@ jQuery(window).on('load',function(){
 					color: "#fff"
 				}
 			}
-		}); 
+		});
 	}
 	//Day Countdown
 	if($('.deal-timer').length>0){
@@ -430,12 +431,12 @@ jQuery(window).on('load',function(){
 					color: "#fff"
 				}
 			}
-		}); 
+		});
 	}
 	//Time Countdown
 	if($('.time-countdown').length>0){
 		$(".time-countdown").each(function(){
-			var data = $(this).data(); 
+			var data = $(this).data();
 			$(this).TimeCircles({
 				fg_width: data.width,
 				bg_width: 0,
@@ -463,7 +464,7 @@ jQuery(window).on('load',function(){
 						color: data.color,
 					}
 				}
-			}); 
+			});
 		});
 	}
 	//Count Down Master
@@ -476,7 +477,7 @@ jQuery(window).on('load',function(){
 		    });
 		});
 	}
-	//Blog Masonry 
+	//Blog Masonry
 	if($('.masonry-list-post').length>0){
 		$('.masonry-list-post').masonry({
 			// options

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Fruit Shop is new Html theme that we have designed to help you transform your store into a beautiful online showroom. This is a fully responsive Html theme, with multiple versions for homepage and multiple templates for sub pages as well" />
-    <meta name="keywords" content="Fruit,7uptheme" />
+    <meta name="description" content="Agribusiness est une plateforme collaborative d'échange de produits agricoles, de connaissances et d'outils et materiels du domaine agricole d'investissement agricole et d'accompagnement dans la gestion  qui fait intervenir agriculteurs,entrepreneurs,producteurs agricoles, exportateurs, grossistes , revendeurs , agro industries, entrepreneurs et particuliers de tous bords interressés par la production agricole particulièrement en afrique " />
+    <meta name="keywords" content="Agribusiness,agriculture,africa" />
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     <title>Agri Business | Login</title>
@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="/packages/assets/css/theme.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="/packages/assets/css/responsive.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="/packages/assets/css/browser.css" media="all"/>
+    <link rel="stylesheet" href="/packages/assets/css/intlTelInput.css">
+
     <!-- <link rel="stylesheet" type="text/css" href="/packages/assets/css/rtl.css" media="all"/> -->
 </head>
 <body class="preload">
@@ -191,9 +193,17 @@
                                         @csrf
                                         <h2 class="title24 title-form-account">Inscription</h2>
                                         <p>
+                                            <label>Civilité</label>
+                                            <select class="form-control" name="civilite" required>
+                                                <option value="Mr">Monsieur</option>
+                                                <option value="Mme">Madame</option>
+                                                <option value="Mlle">Mademoiselle</option>
+                                            </select></p>
+                                        <p>
+                                        <p>
                                             <label for="name">Nom utilisateur <span class="required">*</span></label>
-                                            <input type="text" id="name"  class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                                                   name="name" value="{{ old('name') }}" required  />
+                                            <input type="text" id="name"  class="form-control"
+                                                   name="name" required  />
 
                                             @if ($errors->has('name'))
                                                 <span class="invalid-feedback" role="alert">
@@ -234,6 +244,33 @@
 
                                         </p>
                                         <p>
+                                            <label for="contact">Téléphone <span class="required">*</span></label>
+                                            <input type="tel" id="phone"
+                                                   class="form-control"
+                                                   name="contact" required />
+                                        </p>
+
+                                        <p>
+                                            <label>Date de Naissance</label>
+                                            <input type="date" min="1919-12-31" class="form-control"  name="naissance">
+                                        </p>
+                                        <p>
+                                            <label>Compagnie</label>
+                                            <input type="text" class="form-control" name="compagnie">
+                                          </p>
+                                        <p>
+                                            <label>Profession</label>
+                                            <select class="form-control" name="profession" required>
+                                                <option value="industriel">Industriel</option>
+                                                <option value="grossiste">Grossiste</option>
+                                                <option value="revendeur">Revendeur</option>
+                                                <option value="particulier">Particulier</option>
+                                                <option value="exportateur">Exportateur</option>
+                                                <option value="autres">Autres ...</option>
+                                            </select>
+                                        </p>
+
+                                        <p>
                                             <input type="submit" class="register-button" name="register" value="Valider">
                                         </p>
                                     </form>
@@ -246,7 +283,7 @@
                                 <div class="form-my-account check-register text-center">
                                     <h2 class="title24 title-form-account">Inscription</h2>
                                     <p class="desc"> S'inscrire dans notre plateforme vous donne droit à un accès à une interface d'administration
-                                        de vos commandes (Hiistorique, tracking des livraisons, produits préférés etc.), à des infos en temps réel sur
+                                        de vos commandes (Historique, tracking des livraisons, produits préférés etc.), à des infos en temps réel sur
                                         l'évolution des bonnes pratiques de l'agribusiness en afrique et dans le monde.</p>
                                     <a href="#" class="shop-button bg-color login-to-register" data-login="Se connecter" data-register="S'inscrire">Inscription</a>
                                     <p class="desc title12 silver"><i>Cliquez ici pour switcher entre inscription/connexion</i></p>
@@ -363,5 +400,12 @@
 <script type="text/javascript" src="/packages/assets/js/libs/timecircles.js"></script>
 <script type="text/javascript" src="/packages/assets/js/libs/wow.js"></script>
 <script type="text/javascript" src="/packages/assets/js/theme.js"></script>
+<script src="/packages/assets/js/intlTelInput.js"></script>
+<script src="/packages/assets/js/utils.js"></script>
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+</script>
+
 </body>
 </html>

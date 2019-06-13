@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="/packages/assets/css/theme.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="/packages/assets/css/responsive.css" media="all"/>
     <link rel="stylesheet" type="text/css" href="/packages/assets/css/browser.css" media="all"/>
+    <link rel="stylesheet" href="/packages/assets/css/intlTelInput.css">
+
 @stop
 
 @section('aimeos_scripts')

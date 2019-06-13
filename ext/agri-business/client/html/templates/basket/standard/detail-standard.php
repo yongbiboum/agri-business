@@ -120,10 +120,10 @@ $errors = $this->get( 'summaryErrorCodes', [] );
             <h4><?= $product->getProductCode(); ?></h4>
         </td>
         <td class="product-price" data-title="Price">
-            <span><?= $enc->html( sprintf( $priceFormat, $this->number( $product->getPrice()->getValue() ), $priceCurrency ) ); ?></span>
+            <span><?= $enc->html( sprintf( $priceFormat, $this->number( $product->getPrice()->getValue(),0 ), $priceCurrency ) ); ?></span>
         </td>
         <td class="product-quantity" data-title="Quantity">
-            <div class="detail-qty info-qty border radius6 text-center">
+            <div class="detail-qty info-qty border radius6 text-center inline-block">
                 <?php if( $modify && ( $product->getFlags() & \Aimeos\MShop\Order\Item\Base\Product\Base::FLAG_IMMUTABLE ) == 0 ) : ?>
                     <?php if( $product->getQuantity() > 1 ) : ?>
                         <?php $basketParams = array( 'b_action' => 'edit', 'b_position' => $position, 'b_quantity' => $product->getQuantity() - 1 ); ?>
@@ -149,14 +149,14 @@ $errors = $this->get( 'summaryErrorCodes', [] );
                     <a class="qty-ups " href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
                         <i class="fa fa-angle-up" aria-hidden="true"></i>
                     </a>
-
+                    <h6 class="">KG</h6>
                 <?php else : ?>
                     <?= $enc->html( $product->getQuantity() ); ?>
                 <?php endif; ?>                           </div>
         </td>
         <td class="product-subtotal" data-title="Total">
                             <span class="amount">
-                                <?= $enc->html( sprintf( $priceFormat, $this->number( $product->getPrice()->getValue() * $product->getQuantity() ), $priceCurrency ) ); ?>
+                                <?= $enc->html( sprintf( $priceFormat, $this->number( $product->getPrice()->getValue() * $product->getQuantity(),0 ), $priceCurrency ) ); ?>
                             </span>
         </td>
         <?php if( $modify ) : ?>

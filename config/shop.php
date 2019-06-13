@@ -12,10 +12,12 @@ return [
 		// 'account' => ['middleware' => ['web', 'auth']],
 		// 'default' => ['middleware' => ['web']],
 		// 'update' => [],
+        'aimeos_shop_checkout' => ['middleware' => ['auth','client']],
 	],
 
 	'page' => [
         'account-index' => [ 'catalog/filter','account/accountlist','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],
+        'account-components' => [ 'catalog/filter','account/composants','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],
         'basket-index' => [ 'basket/standard','catalog/logo','catalog/filter','basket/related','catalog/footer','catalog/slide','catalog/nav','basket/mini' ],
         'catalog-choose' => [ 'basket/mini','catalog/catlist','catalog/filter','catalog/footer','catalog/lists','catalog/logo','catalog/stage','catalog/slide','catalog/nav','catalog/categories' ],
         'catalog-count' => [ 'catalog/count' ],
@@ -54,6 +56,19 @@ return [
 
 	'client' => [
 		'html' => [
+            'email' => [
+
+                'from-email' => 'steveyong4@gmail.com',
+                'from-name' => 'Agri-business',
+
+            ],
+		     'account'  => [
+		        'favorite' => [
+		            'decorators' => [
+		              "global" => ["FavoriteDecorator"],
+                    ],
+                ],
+            ],
             'catalog' => [
                 'categories' => [
                     'standard' => [

@@ -46,6 +46,10 @@ Route::match( array( 'GET', 'POST' ), '/compte', array(
     'as' => 'aimeos_shop_account',
     'uses' => 'AccountController@indexAction'
 ))->middleware('auth','client');
+Route::match( array( 'GET', 'POST' ), '/compte/{composant}', array(
+    'as' => 'account_components',
+    'uses' => 'AccountController@componentAction'
+))->middleware('auth','client');
 Route::match( array( 'GET', 'POST' ), '/client', array(
     'as' => 'client',
     'uses' => 'AccountController@clientAction'

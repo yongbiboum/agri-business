@@ -2052,7 +2052,7 @@ a.post-cat {
   color: #fff;
   background: transparent;
   padding: 0 40px;
-  text-transform: uppercase;
+
 }
 .email-form {
   position: relative;
@@ -3033,7 +3033,6 @@ body .shop-button {
   border: none;
   border-radius: 20px;
   color: #fff;
-  text-transform: uppercase;
   position: absolute;
   top: 0;
   right: 0;
@@ -6096,4 +6095,17 @@ input.register-button.save-change {
     -webkit-transform: rotate(360deg) scale(0.8);
     transform: rotate(360deg) scale(0.8);
   }
+}
+/* custom css*/
+
+.flex-container{
+   display: flex;
+}
+
+
+.blocks{
+    padding : 0px 30px 30px 30px; !important;
+    display: inline-block;
+    width: 50%;
+    margin-top: 20px;
 }

@@ -158,7 +158,7 @@ AimeosAccountFavorite = {
 	setupProductRemoval: function() {
 
 		$("body").on("click", ".account-favorite a.modify", function(ev) {
-
+		    ev.preventDefault();
 			var item = $(this).parents("favorite-item");
 			item.addClass("loading");
 

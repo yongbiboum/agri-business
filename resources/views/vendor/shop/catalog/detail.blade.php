@@ -21,7 +21,7 @@
 @section('aimeos_stage')
     <?= $aibody['catalog/filter'] ?>
     <?= $aibody['catalog/logo'] ?>
-    <?= $aibody['basket/mini'] ?>
+
 @stop
 @section('aimeos_nav')
     <?= $aibody['catalog/nav'] ?>

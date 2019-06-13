@@ -14,6 +14,7 @@ $getProductList = function( array $posItems, array $items )
     return $list;
 };
 
+$params = $this->get( 'params', [] );
 
 $enc = $this->encoder();
 
@@ -28,7 +29,7 @@ $basketAction = $this->config( 'client/html/basket/standard/url/action', 'index'
 $basketConfig = $this->config( 'client/html/basket/standard/url/config', [] );
 $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 
-$basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
+$basketParams = ( $basketSite ? ['site' =>  $basketSite] : [] );
 
 $reqstock = (int) $this->config( 'client/html/basket/require-stock', true );
 
@@ -66,6 +67,10 @@ if( isset( $this->detailProductItem ) )
         $subPropDeps[ $propId ][] = $propItem->getParentId();
     }
 }
+$favTarget = $this->config( 'client/html/account/favorite/url/target' );
+$favController = $this->config( 'client/html/account/favorite/url/controller', 'account' );
+$favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite' );
+$favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
 
 
 ?>
@@ -82,6 +87,9 @@ if( isset( $this->detailProductItem ) )
     <?php if( isset( $this->detailProductItem ) ) : ?>
         <?php
         $conf = $this->detailProductItem->getConfig();
+        $urls = array(
+            'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $this->detailProductItem->getId() ) + $params, $favConfig ),
+        );
 
         $disabled = '';
         $curdate = date( 'Y-m-d H:i:00' );
@@ -150,14 +158,18 @@ if( isset( $this->detailProductItem ) )
                                                  min="1" max="2147483647" maxlength="10" step="1" required="required" value="1"
                                         />
                                         <a href="#" class="qty-up silver"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-
+                                        <select name="unité" class="form-control" >
+                                            <option value="admin">KG</option>
+                                            <option value="client">Tonne(s)</option>
+                                            <option value="producteur">Litres</option>
+                                        </select>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="product-extra-link">
 
                                         <a href="#" class="addcart-link">Achat</a>
-                                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Wishlist</span></a>
+                                        <a href="<?= $urls['favorite'] ?>" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Favoris</span></a>
                                         </div>
                                 </li>
                                     <?php if( $basketSite ) : ?>
@@ -174,9 +186,7 @@ if( isset( $this->detailProductItem ) )
                                     />
                             </ul>
                                 </form>
-                            <p class="desc info-extra">
-                                <label>Categorie :</label><a href="#" class="color"><?php $enc->attr( $this->param('catid') ); ?></a>
-                            </p>
+
                             <p class="desc info-extra">
                                 <label>ID Produit :</label><span class="color"><?= $enc->attr( $this->detailProductItem->getId() ); ?></span>
                             </p>

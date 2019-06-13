@@ -106,7 +106,7 @@
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <div class="logo logo1">
                                 <h1 class="hidden">Agri business</h1>
-                                <a href="index.html"><img class="image" src="/packages/assets/images/home/home2/agri.png" alt="" /></a>
+                                <a href="/"><img class="image" src="/packages/assets/images/home/home2/agri.png" alt="" /></a>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-12">
@@ -123,7 +123,7 @@
                             <li class="current-menu-item ">
                                 <a href="#">Accueil</a>
                             </li>
-                            <li><a href="/list">Marché</a></li>
+                            <li><a href="/list">Nos produits</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">A propos</a></li>
                             <li><a href="#">Contacts</a></li>
@@ -141,10 +141,12 @@
         <div class="banner-slider banner-slider1 bg-slider parallax-slider">
             <div class="wrap-item" data-transition="fade" data-autoplay="true" data-pagination="false" data-navigation="true" data-itemscustom="[[0,1]]">
                 <div class="item-slider item-slider1">
-                    <div class="banner-thumb"><a href="#"><img src="/packages/assets/images/home/home3/slide2.jpg" alt="" /></a></div>
+                    <div class="banner-thumb">
+                        <a href="#"><img src="/packages/assets/images/shop/slide.png" alt="" /></a>
+                    </div>
                     <div class="banner-info animated" data-animated="bounceIn">
                         <div class="text-center white text-uppercase">
-                            <h3 class="title30">Au coeur de l'agribusiness africain</h3>
+                            <h3 class="title30" style="color: #66cc33;">Au coeur de l'agribusiness africain</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
                             <a href="#" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
@@ -152,10 +154,23 @@
                     </div>
                 </div>
                 <div class="item-slider item-slider1">
-                    <div class="banner-thumb"><a href="#"><img src="/packages/assets/images/home/home3/slide1.jpg" alt="" /></a></div>
+                    <div class="banner-thumb">
+                        <a href="#"><img src="/packages/assets/images/shop/slide01.jpg" alt="" /></a>
+                    </div>
                     <div class="banner-info animated" data-animated="bounceIn">
                         <div class="text-center white text-uppercase">
-                            <h3 class="title30">Au coeur de l'agribusiness africain</h3>
+                            <h3 class="title30" style="color: #66cc33;">Pour une agriculture de seconde génération</h3>
+                            <h2 class="title120 font-bold animated" data-animated="flash"></h2>
+                            <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
+                            <a href="#" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-slider item-slider1">
+                    <div class="banner-thumb"><a href="#"><img src="/packages/assets/images/shop/mais.png" alt="" /></a></div>
+                    <div class="banner-info animated" data-animated="bounceIn">
+                        <div class="text-center white text-uppercase">
+                            <h3 class="title30" style="color: #66cc33;" >Une croissance exponentielle du secteur primaire</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
                             <a href="#" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
@@ -248,8 +263,8 @@
                                     <div class="col-md-6 col-sm-6 col-xs-6">
                                         <div class="decate-thumb banner-adv zoom-out">
                                             <a href="#" class="adv-thumb-link">
-                                                <img src="/packages/assets/images/shop/homme.png" alt="" />
-                                                <img src="/packages/assets/images/shop/homme.png" alt="" />
+                                                <img src="/packages/assets/images/shop/vendeurs.png" alt="" />
+                                                <img src="/packages/assets/images/shop/vendeurs.png" alt="" />
                                                </a>
                                         </div>
                                     </div>

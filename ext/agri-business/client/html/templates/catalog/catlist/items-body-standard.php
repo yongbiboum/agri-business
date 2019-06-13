@@ -4,6 +4,7 @@ $enc = $this->encoder();
 $position = $this->get( 'itemPosition' );
 $productItems = $this->get( 'itemsProductItems', [] );
 $params = $this->get( 'params', [] );
+$parame = $this->get( 'params', [] );
 
 $detailTarget = $this->config( 'client/html/catalog/detail/url/target' );
 $detailController = $this->config( 'client/html/catalog/detail/url/controller', 'catalog' );
@@ -19,6 +20,11 @@ $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
 $list = $this->config( 'client/html/catalog/actions/list', array( 'pin', 'watch', 'favorite' ) );
+
+$favTarget = $this->config( 'client/html/account/favorite/url/target' );
+$favController = $this->config( 'client/html/account/favorite/url/controller', 'account' );
+$favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite' );
+$favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
 
 $pinTarget = $this->config( 'client/html/catalog/session/pinned/url/target' );
 $pinController = $this->config( 'client/html/catalog/session/pinned/url/controller', 'catalog' );
@@ -60,7 +66,7 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
         $price = $productItemid->getRefItems( 'price', null, 'default' );
         $priceUrl= collect($price)->first()->getValue() ;
 
-        $pin = $this->url( $pinTarget, $pinController, $pinAction, array( 'pin_action' => 'add', 'pin_id' => $productItem->getId() ) + $params, $pinConfig ) ;
+        //$pin = $this->url( $pinTarget, $pinController, $pinAction, array( 'pin_action' => 'add', 'pin_id' => $productItem->getId() ) , $pinConfig ) ;
 
         $unite = 'Kg';
         if ($stocklevel > (float)'1000.0'){
@@ -73,11 +79,33 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
         }
 
         //dd($localite);
-        $params = array( 'd_name' => $productItem->getName( 'url' ), 'd_prodid' => $productItem->getId(),'catid' => $this->catid );
+        $params = array( 'd_name' => $productItem->getName( 'url' ), 'd_prodid' => $productItem->getId() );
         $url = $this->url( ($productItem->getTarget() ?: $detailTarget ), $detailController, $detailAction, $params, [], $detailConfig );
+        $urls = array(
+            'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $productItem->getId() ) + $parame, $favConfig ),
+        );
 
         ?>
-
+        <div class="modal fade" id="favoris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Produits favoris</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class=""><?=$variete?> ajouté avec succès à vos produit favoris</h6>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                        <a href="" class=""><button type="button" class="btn btn-primary">Aller vers mon compte</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 <div class="col-md-4 col-sm-6 col-xs-6">
         <div class="item-product item-product-grid text-center">
 
@@ -106,7 +134,7 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
                     <div class="product-rating" style="width:75%"></div>
                 </div>
                 <div class="product-extra-link">
-                    <a href="<?= $pin ?>" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Favoris</span></a>
+                    <a href="<?= $urls['favorite'] ?>" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Favoris</span></a>
                     <a href="<?= $url; ?>" id="achat" class="addcart-link">Achat</a>
                 </div>
             </div>

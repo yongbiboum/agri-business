@@ -105,7 +105,7 @@
                             <li class="current-menu-item ">
                                 <a href="/">Accueil</a>
                             </li>
-                            <li><a href="/list">Marché</a></li>
+                            <li><a href="/list">Nos produits</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">A propos</a></li>
                             <li><a href="#">Contacts</a></li>
@@ -123,7 +123,7 @@
         <div class="content-page">
             <div class="container">
                 <div class="shop-banner banner-adv line-scale zoom-image">
-                    <a href="#" class="adv-thumb-link"><img src="/packages/assets/images/inscrition.png" alt="" /></a>
+                    <a href="#" class="adv-thumb-link"><img src="/packages/assets/images/inscrition.png" /></a>
                     <div class="banner-info">
                         <h2 class="title30 color">Connexion/Inscription</h2>
                         <div class="bread-crumb white"><a href="#" class="white">Accueil</a><span></span></div>
@@ -165,7 +165,7 @@
                                             @endif
                                         </p>
                                         <p>
-                                            <input type="submit" class="register-button" >
+                                            <input type="submit" class="register-button" value="Se connecter">
                                         </p>
                                         <div class="table create-account">
                                             <div class="text-left">
@@ -177,7 +177,7 @@
                                             </div>
                                             @if (Route::has('password.request'))
                                             <div class="text-right">
-                                                <a href="#" class="color">Mot de passe oublié?</a>
+                                                <a href="<?= route('password.request')?>" class="color">Mot de passe oublié?</a>
                                             </div>
                                             @endif
                                         </div>

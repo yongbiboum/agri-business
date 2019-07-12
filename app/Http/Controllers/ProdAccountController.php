@@ -12,7 +12,8 @@ namespace App\Http\Controllers;
 class ProdAccountController
 {
     public function indexAction(){
-        $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'account-index' );
-        return view('shop::account.index', $params);
+        $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'account-prod' );
+        return view('shop::account.producteur', $params);
     }
+
 }

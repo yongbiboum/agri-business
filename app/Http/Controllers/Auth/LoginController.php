@@ -35,7 +35,7 @@ class LoginController extends Controller
             return '/compte';
         }
         elseif (Auth::check() && Auth::user()->role == 'producteur') {
-            return '/comptepro';
+            return '/compte_producteur';
         }
         elseif (Auth::check() && Auth::user()->role == 'agent') {
             return '/agent';

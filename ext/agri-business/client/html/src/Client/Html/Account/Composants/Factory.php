@@ -25,12 +25,12 @@ class Factory
 
         if( ctype_alnum( $name ) === false )
         {
-            $classname = is_string( $name ) ? '\\Aimeos\\Client\\Html\\Account\\composants\\' . $name : '<not a string>';
+            $classname = is_string( $name ) ? '\\Aimeos\\Client\\Html\\Account\\Composants\\' . $name : '<not a string>';
             throw new \Aimeos\Client\Html\Exception( sprintf( 'Invalid characters in class name "%1$s"', $classname ) );
         }
 
         $iface = '\\Aimeos\\Client\\Html\\Iface';
-        $classname = '\\Aimeos\\Client\\Html\\Account\\composants\\' . $name;
+        $classname = '\\Aimeos\\Client\\Html\\Account\\Composants\\' . $name;
 
         $client = self::createClientBase( $context, $classname, $iface );
         $client = self::addClientDecorators( $context, $client, 'account/composants' );

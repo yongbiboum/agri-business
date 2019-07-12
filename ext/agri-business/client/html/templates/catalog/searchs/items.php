@@ -3,6 +3,7 @@
 $enc = $this->encoder();
 $position = $this->get( 'itemPosition' );
 $productItems = $this->get( 'itemsProductItems', [] );
+$parame = $this->get( 'params', [] );
 
 $detailTarget = $this->config( 'client/html/catalog/detail/url/target' );
 $detailController = $this->config( 'client/html/catalog/detail/url/controller', 'catalog' );
@@ -16,6 +17,11 @@ $basketConfig = $this->config( 'client/html/basket/standard/url/config', [] );
 $basketSite = $this->config( 'client/html/basket/standard/url/site' );
 
 $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
+
+$favTarget = $this->config( 'client/html/account/favorite/url/target' );
+$favController = $this->config( 'client/html/account/favorite/url/controller', 'account' );
+$favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite' );
+$favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
 
 
 /**
@@ -53,6 +59,10 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
         $price = $productItemid->getRefItems( 'price', null, 'default' );
         $priceUrl= collect($price)->first()->getValue() ;
 
+        $urls = array(
+            'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $productItem->getId() ) + $parame, $favConfig ),
+        );
+
         $unite = 'Kg';
         if ($stocklevel > (float)'1000.0'){
             $unite = 'Tonnes';
@@ -70,34 +80,41 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
         ?>
 
         <div class="col-md-4 col-sm-6 col-xs-6">
-            <div class="item-product item-product-grid text-center">
+            <div class="item-product item-product-grid ">
 
-                <div class="product-thumb" >
+                <div class="product-thumb" style="height: 140px;!important ; width: 249px; " >
                     <a href="<?= $url ?>" class="product-thumb-link rotate-thumb">
+                        <img src="<?= asset(collect($productItemid->getRefItems("media"))->first()->getUrl()) ?>" alt="">
+                        <img src="<?= asset(collect($productItemid->getRefItems("media"))->first()->getUrl()) ?>" alt="">
                     </a>
-                    <a href="#" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
                 </div>
                 <div class="product-info">
                     <a href="<?= $url; ?>">
-                        <h3 class="product-title">
+                        <h3 style="color: #66cc33;" class="product-title">
                             <?= $enc->html( $variete, $enc::TRUST ); ?>
                         </h3>
                         <h5 >
                             Stock : <?= $enc->html( $stocklevel, $enc::TRUST ); ?> <?= $unite ?>
-                        </h5>
-                        <h5 >
-                            <?= $enc->html( $localite, $enc::TRUST ); ?>
                         </h5>
                     </a>
                     <div class="product-price" data-prodid="<?= $enc->attr( $id ); ?>"
                          data-prodcode="<?= $enc->attr( $productItem->getCode() ); ?>">
                         <ins class="color"> <span > <?= $this->number($priceUrl,0); ?> FCFA/Kg </span> </ins>
                     </div>
+                    <div class="flex-lg-column">
+                        <a href="#">
+                        <h5 >
+                            <img style="width: 15px!important;" src="/packages/assets/images/localisation.png" alt="">
+                            <?= $enc->html( $localite, $enc::TRUST ); ?>
+                        </h5>
+                        </a>
+                    </div>
+
                     <div class="product-rate">
                         <div class="product-rating" style="width:75%"></div>
                     </div>
                     <div class="product-extra-link">
-                        <a href="#" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Souhait</span></a>
+                        <a href="<?= $urls['favorite'] ?>" class="wishlist-link"><i class="fa fa-heart-o" aria-hidden="true"></i><span>Souhait</span></a>
                         <a href="<?= $url; ?>" id="achat" class="addcart-link">Achat</a>
                     </div>
                 </div>

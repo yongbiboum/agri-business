@@ -16,8 +16,9 @@ return [
 	],
 
 	'page' => [
+	    'account-prod' => [ 'account/accountlist','account/producteur','catalog/filter','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','catalog/session' ],
         'account-index' => [ 'catalog/filter','account/accountlist','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],
-        'account-components' => [ 'catalog/filter','account/composants','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],
+        'account-components' => [ 'catalog/filter','account/commandes','account/composants','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],
         'basket-index' => [ 'basket/standard','catalog/logo','catalog/filter','basket/related','catalog/footer','catalog/slide','catalog/nav','basket/mini' ],
         'catalog-choose' => [ 'basket/mini','catalog/catlist','catalog/filter','catalog/footer','catalog/lists','catalog/logo','catalog/stage','catalog/slide','catalog/nav','catalog/categories' ],
         'catalog-count' => [ 'catalog/count' ],
@@ -68,8 +69,21 @@ return [
 		              "global" => ["FavoriteDecorator"],
                     ],
                 ],
+                 'history' => [
+                     'lists' => [
+
+                         'decorators' =>  [
+                             "global" => ["HistoryDecorator"],
+                         ],
+                     ],
+                 ],
             ],
             'catalog' => [
+                "detail" =>[
+                    "decorators" => [
+                        "global" => ["DetailDecorator"],
+                    ],
+                ],
                 'categories' => [
                     'standard' => [
                         'subparts' => ['catsearch'],

@@ -19,6 +19,14 @@ class AccountController extends Controller
         $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'account-components' );
         return view('shop::account.composants', $params);
     }
+    public function commandesAction(){
+        $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'account-components' );
+        return view('shop::account.commandes', $params);
+    }
+    public function demandeAction(){
+        $params = app( 'Aimeos\Shop\Base\Page' )->getSections( 'account-components' );
+        return view('shop::account.demande', $params);
+    }
     public function clientAction(){
         return view('shop::account.clientlte');
     }

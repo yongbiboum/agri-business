@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Fruit Shop is new Html theme that we have designed to help you transform your store into a beautiful online showroom. This is a fully responsive Html theme, with multiple versions for homepage and multiple templates for sub pages as well" />
-    <meta name="keywords" content="Fruit,7uptheme" />
+    <meta name="description" content="Agribusiness est une plateforme B2B de promotion du secteur agricole au travers de la vente des produits et de l'accompagnement des entrepreneurs agricoles de catégories rurales, industrielle urbains etc." />
+    <meta name="keywords" content="Agribusiness,Agri-business, Agriculture, Afrique, Cameroun" />
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     <title>Agri Business | Accueil</title>
@@ -162,7 +162,7 @@
                             <h3 class="title30" style="color: #66cc33;">Pour une agriculture de seconde génération</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
-                            <a href="#" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
+                            <a href="/list" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                             <h3 class="title30" style="color: #66cc33;" >Une croissance exponentielle du secteur primaire</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
-                            <a href="#" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
+                            <a href="/list" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
                         </div>
                     </div>
                 </div>

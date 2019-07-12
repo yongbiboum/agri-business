@@ -26,9 +26,7 @@
 @section('aimeos_nav')
     <?= $aibody['catalog/nav'] ?>
 @stop
-@section('aimeos_slide')
-    <?= $aibody['catalog/slide'] ?>
-@stop
+
 @section('aimeos_body')
     <?= $aibody['catalog/detail'] ?>
 @stop

@@ -12,6 +12,9 @@ window.$ = $;
         e.preventDefault();
         var qtyval = parseInt($(".detail-qty span").text()) ;
         $('#qty').val(qtyval);
+        if($('#unite').val()==="Tonne(s)"){
+            $('#qty').val(qtyval*1000);
+        }
         addCartForm.submit();
     })
 

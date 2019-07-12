@@ -5,25 +5,22 @@ $optCntl = $this->config( 'client/jsonapi/url/controller', 'jsonapi' );
 $optAction = $this->config( 'client/jsonapi/url/action', 'options' );
 $optConfig = $this->config( 'client/jsonapi/url/config', [] );
 
-$composant = $this->composant;?>
+$composant = !isset($this->composant) ? null : $this->composant;?>
 
 <div class="col-md-9 col-sm-8 col-xs-12" data-jsonurl="<?= $enc->attr( $this->url( $optTarget, $optCntl, $optAction, [], [], $optConfig ) ); ?>" >
     <div class="main-content-shop">
-        <?php include('stagelist.php'); ?>
         <div class="product-grid-view">
             <div class="row">
-
+<?php if(!is_null($composant)):?>
                 <?php switch ($composant) {
                  case 'commandes' :
-                 include( 'commandes.php' );
+                 include('commandes/commandes.php');
                  break;
                  case "demandes" :
                  include( 'demandes.php' );
                  break;
                  case "favoris" :
                      include('favoris.php');
-                     //  include( $aibody['account/favorite']);
-               // include( '../favorite/body-standard.php' );
                  break;
                  case "historique" :
                  include( 'historique.php' );
@@ -43,8 +40,12 @@ $composant = $this->composant;?>
                  default :
                  include( "accueil.php" );
                  }?>
+                <?php else:
+                    include( "accueil.php" );
+                endif;
+                ?>
+
             </div>
         </div>
     </div>
-    <?php //include('pagination-standard.php') ?>
 </div>

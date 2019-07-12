@@ -28,9 +28,11 @@
     if($catnombre<(int)'9'):
     ?>
         <h2 class="title30 color text-center">Produits  </h2>
-        <p class="desc silver pull-left">Résultats 1–<?= $catnombre ?> sur <?= $catnombre ?></p>
+       <!-- <p class="desc silver pull-left">Résultats 1–<?= $catnombre ?> sur <?= $catnombre ?></p>
+    !-->
     <?php else:?>
         <h2 class="title30 color text-center">Produits  </h2>
-    <p class="desc silver pull-left">Résultats 1–9 sur <?= $catnombre ?></p>
+    <!--<p class="desc silver pull-left">Résultats 1–9 sur <?= $catnombre ?></p>
+    !-->
     <?php endif;?>
 </div>

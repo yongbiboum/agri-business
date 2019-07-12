@@ -107,29 +107,36 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
             </div>
         </div>
 <div class="col-md-4 col-sm-6 col-xs-6">
-        <div class="item-product item-product-grid text-center">
+        <div class="item-product item-product-grid ">
 
-                 <div class="product-thumb" >
+                 <div class="product-thumb" style="height: 140px;!important ; width: 100%; " >
                   <a href="<?= $url ?>" class="product-thumb-link rotate-thumb">
+                      <img src=" <?= asset(collect($productItem->getRefItems("media"))->first()->getUrl()) ?>" alt="">
+                      <img src=" <?= asset(collect($productItem->getRefItems("media"))->first()->getUrl()) ?>" alt="">
                   </a>
-                <a href="#" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
-            <div class="product-info">
+            <div class="product-info" style="font-family: Roboto ;">
                 <a href="<?= $url; ?>">
-                <h3 class="product-title">
+                <h3 style="color: #66cc33;" class="product-title">
                     <?= $enc->html( $variete, $enc::TRUST ); ?>
                 </h3>
                 <h5 >
-                   Stock : <?= $enc->html( $stocklevel, $enc::TRUST ); ?> <?= $unite ?>
-                </h5>
-                <h5 >
-                     <?= $enc->html( $localite, $enc::TRUST ); ?>
+                   Stock Actuel : <?= $enc->html( $stocklevel, $enc::TRUST ); ?> <?= $unite ?>
                 </h5>
                 </a>
                 <div class="product-price" data-prodid="<?= $enc->attr( $id ); ?>"
                      data-prodcode="<?= $enc->attr( $productItem->getCode() ); ?>">
                     <ins class="color"> <span > <?= $this->number($priceUrl,0); ?> FCFA/Kg </span> </ins>
                 </div>
+                <div class="flex-lg-column">
+                    <a href="#">
+                    <h5 >
+                        <img style="width: 15px!important;" src="/packages/assets/images/localisation.png" alt="">
+                        <?= $enc->html( $localite, $enc::TRUST ); ?>
+                    </h5>
+                    </a>
+                </div>
+
                 <div class="product-rate">
                     <div class="product-rating" style="width:75%"></div>
                 </div>

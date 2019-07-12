@@ -217,7 +217,7 @@ class Standard
 		$context = $this->getContext();
 		$manager = \Aimeos\MShop\Factory::createManager( $context, 'order' );
 
-
+		$view->context = $context;
 		$search = $manager->createSearch( true );
 		$expr = array(
 			$search->getConditions(),

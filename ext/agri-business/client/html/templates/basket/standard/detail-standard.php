@@ -25,6 +25,7 @@ $attrTypes = $this->config( 'client/html/common/summary/detail/product/attribute
 
 $priceTaxvalue = '0.00';
 
+
 if( isset( $this->summaryBasket ) )
 {
     $price = $this->summaryBasket->getPrice();
@@ -77,7 +78,7 @@ $priceFormat = $this->translate( 'client', '%1$s %2$s' );
 $unhide = $this->get( 'summaryShowDownloadAttributes', false );
 $modify = $this->get( 'summaryEnableModify', false );
 $errors = $this->get( 'summaryErrorCodes', [] );
-
+//$unite = $this->get('unite');
 ?>
 <table class="shop_table cart table color">
     <thead>
@@ -126,7 +127,7 @@ $errors = $this->get( 'summaryErrorCodes', [] );
             <div class="detail-qty info-qty border radius6 text-center inline-block">
                 <?php if( $modify && ( $product->getFlags() & \Aimeos\MShop\Order\Item\Base\Product\Base::FLAG_IMMUTABLE ) == 0 ) : ?>
                     <?php if( $product->getQuantity() > 1 ) : ?>
-                        <?php $basketParams = array( 'b_action' => 'edit', 'b_position' => $position, 'b_quantity' => $product->getQuantity() - 1 ); ?>
+                        <?php $basketParams = array( 'b_action' => 'edit','unite'=>$unite, 'b_position' => $position, 'b_quantity' => $product->getQuantity() - 1 ); ?>
                         <a class="qty-downs "  href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
                             <i class="fa fa-angle-down"aria-hidden="true"></i>
                         </a>
@@ -134,7 +135,22 @@ $errors = $this->get( 'summaryErrorCodes', [] );
                         &nbsp;
                     <?php endif; ?>
 
-                    <span class="qty-val">  <?= $enc->attr( $product->getQuantity() ); ?>
+                    <span class="qty-val">
+
+                        <?php if($product->getQuantity()>1000) {
+                            $unite="Tonnes";
+                            ?>
+                        <?= $enc->attr( $product->getQuantity()/1000 ); ?>
+                        <?php }?>
+                        <?php if($product->getQuantity()===1000) :
+                            $unite="Tonne";
+                            ?>
+                            <?= $enc->attr( $product->getQuantity()/1000 ); ?>
+                        <?php elseif ($product->getQuantity()<1000) :
+                        ?>
+                        <?= $enc->attr( $product->getQuantity() ); ?>
+                        <?php endif; ?>
+
                     </span>
                     <input class="qty-val" type="hidden"
                            name="<?= $enc->attr( $this->formparam( array( 'b_prod', $position, 'quantity' ) ) ); ?>"
@@ -145,11 +161,11 @@ $errors = $this->get( 'summaryErrorCodes', [] );
                            value="<?= $enc->attr( $position ); ?>"
                     />
 
-                    <?php $basketParams = array( 'b_action' => 'edit', 'b_position' => $position, 'b_quantity' => $product->getQuantity() + 1 ); ?>
+                    <?php $basketParams = array( 'b_action' => 'edit', 'unite' => $unite,  'b_position' => $position, 'b_quantity' => $product->getQuantity() + 1 ); ?>
                     <a class="qty-ups " href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?>">
                         <i class="fa fa-angle-up" aria-hidden="true"></i>
                     </a>
-                    <h6 class="">KG</h6>
+                    <h6 class=""><?= $unite ?></h6>
                 <?php else : ?>
                     <?= $enc->html( $product->getQuantity() ); ?>
                 <?php endif; ?>                           </div>
@@ -162,7 +178,7 @@ $errors = $this->get( 'summaryErrorCodes', [] );
         <?php if( $modify ) : ?>
             <td class="product-remove">
                 <?php if( ( $product->getFlags() & \Aimeos\MShop\Order\Item\Base\Product\Base::FLAG_IMMUTABLE ) == 0 ) : ?>
-                    <?php $basketParams = array( 'b_action' => 'delete', 'b_position' => $position ); ?>
+                    <?php $basketParams = array( 'b_action' => 'delete', 'b_position' => $position, 'unite'=>$unite ); ?>
                     <a class="remove"
                        href="<?= $enc->attr( $this->url( $basketTarget, $basketController, $basketAction, $basketParams, [], $basketConfig ) ); ?> "><i class="fa fa-times"></i></a>
                 <?php endif; ?>

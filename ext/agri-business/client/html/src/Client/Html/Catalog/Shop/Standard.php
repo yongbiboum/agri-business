@@ -195,24 +195,29 @@ class Standard
 
     public function addData( \Aimeos\MW\View\Iface $view, array &$tags = [], &$expire = null )
     {
-
         $view->context = $this->getContext();
         $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
         $search = $manager->createSearch();
-        $catid = $view->param( 'id' );
-
+       // dd($catid);
         $catlist = $manager->searchItems( $search,['media','text','price'],$total);
         $view->catalogList =$catlist ;
+       // $this->addMetaItems( collect($catlist)->first(), $expire, $tags );
 
-        if($catid!== null ) {
-
-            $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
+        $catid = $view->param( 'id' );
+//dd($catid);
+        if($catid !== null ) {
+            //dd($catid);
+           // $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
             $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
 
             $tree=$manager->getTree($catid,['media','text'],\Aimeos\MW\Tree\Manager\Base::LEVEL_TREE)->getNode()->getChildren();
 
+            $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
+            $catalogItem = $manager->getItem( $catid, $domains );
+
             $view->catalogList = $tree;
 
+            $this->addMetaItems( $catalogItem, $expire, $tags );
         }
 
         //dd($catlist);

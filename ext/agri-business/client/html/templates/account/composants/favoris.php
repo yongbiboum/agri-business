@@ -1,60 +1,47 @@
-
-
  <?php
-
-                /**
+ /**
                  * @license LGPLv3, http://opensource.org/licenses/LGPL-3.0
                  * @copyright Metaways Infosystems GmbH, 2014
                  * @copyright Aimeos (aimeos.org), 2015-2018
                  */
 
-                $enc = $this->encoder();
-                $favParams = $this->get( 'favoriteParams', [] );
-                $listItems = $this->get( 'favoriteListItems', [] );
-                $productItems = $this->get( 'favoriteProductItems', [] );
+ $enc = $this->encoder();
+ $favParams = $this->get( 'favoriteParams', [] );
+ $listItems = $this->get( 'favoriteListItems', [] );
+ $productItems = $this->get( 'favoriteProductItems', [] );
 
-                /** client/html/account/favorite/url/target
-                 * Destination of the URL where the controller specified in the URL is known
-                 *
-                 * The destination can be a page ID like in a content management system or the
-                 * module of a software development framework. This "target" must contain or know
-                 * the controller that should be called by the generated URL.
-                 *
-                 * @param string Destination of the URL
-                 * @since 2014.09
-                 * @category Developer
-                 * @see client/html/account/favorite/url/controller
-                 * @see client/html/account/favorite/url/action
-                 * @see client/html/account/favorite/url/config
-                 */
-                $favTarget = $this->config( 'client/html/account/favorite/url/target' );
+ $favTarget = $this->config( 'client/html/account/favorite/url/target' );
+ $favController = $this->config( 'client/html/account/favorite/url/controller', 'account' );
+ $favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite' );
+ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
 
-                $favController = $this->config( 'client/html/account/favorite/url/controller', 'account' );
+ $detailTarget = $this->config( 'client/html/catalog/detail/url/target' );
+ $detailController = $this->config( 'client/html/catalog/detail/url/controller', 'catalog' );
+ $detailAction = $this->config( 'client/html/catalog/detail/url/action', 'detail' );
+ $detailConfig = $this->config( 'client/html/catalog/detail/url/config', [] );
 
-                $favAction = $this->config( 'client/html/account/favorite/url/action', 'favorite' );
-
-                $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
-
-                $detailTarget = $this->config( 'client/html/catalog/detail/url/target' );
-                $detailController = $this->config( 'client/html/catalog/detail/url/controller', 'catalog' );
-                $detailAction = $this->config( 'client/html/catalog/detail/url/action', 'detail' );
-                $detailConfig = $this->config( 'client/html/catalog/detail/url/config', [] );
-
-                $optTarget = $this->config( 'client/jsonapi/url/target' );
-                $optCntl = $this->config( 'client/jsonapi/url/controller', 'jsonapi' );
-                $optAction = $this->config( 'client/jsonapi/url/action', 'options' );
-                $optConfig = $this->config( 'client/jsonapi/url/config', [] );
-
-
-                ?>
-                <?php if( ( $errors = $this->get( 'favoriteErrorList', [] ) ) !== [] ) : ?>
-                    <ul class="error-list">
-                        <?php foreach( $errors as $error ) : ?>
-                            <li class="error-item"><?= $enc->html( $error ); ?></li>
-                        <?php endforeach; ?>
-                    </ul>
-                <?php endif; ?>
-
+ $optTarget = $this->config( 'client/jsonapi/url/target' );
+ $optCntl = $this->config( 'client/jsonapi/url/controller', 'jsonapi' );
+ $optAction = $this->config( 'client/jsonapi/url/action', 'options' );
+ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
+ ?>
+ <?php if( ( $errors = $this->get( 'favoriteErrorList', [] ) ) !== [] ) : ?>
+     <ul class="error-list">
+         <?php foreach( $errors as $error ) : ?>
+             <li class="error-item"><?= $enc->html( $error ); ?></li>
+         <?php endforeach; ?>
+     </ul>
+ <?php endif; ?>
+ <div class="breadcrumbs">
+     <ol class="breadcrumb">
+         <li><a href="/list">Mon Compte</a></li>
+         <li class="active">Mes Favoris</li>
+     </ol>
+ </div>
+ <div align="center" style="margin-bottom: 10px ">
+     <img width="100px" height="100px" src="/packages/assets/images/coeur.jpg" alt="" class="">
+ </div>
+ <br><br>
                 <?php if( !empty( $listItems ) ) : ?>
                     <?php foreach( $listItems as $listItem ) : $id = $listItem->getRefId(); ?>
                         <?php if( isset( $productItems[$id] ) ) : $productItem = $productItems[$id];

@@ -41,7 +41,6 @@
 @section('aimeos_body')
     <?= $aibody['account/accountlist'] ?>
     <?= $aibody['catalog/session'] ?>
-
 @stop
 
 

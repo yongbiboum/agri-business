@@ -28,57 +28,22 @@ class Standard
     private $expire;
     private $view;
 
-    public function getSubClient( $type, $name = null )
+
+    public function addData( \Aimeos\MW\View\Iface $view, array &$tags = [], &$expire = null )
     {
-        return $this->createSubClient( 'catalog/slide/' . $type, $name );
-    }
-    public function modifyBody( $content, $uid )
-    {
-        $content = parent::modifyBody( $content, $uid );
-
-        return $this->replaceSection( $content, $this->getView()->csrf()->formfield(), 'catalog.slide.csrf' );
-    }
-
-    protected function getSubClientNames()
-    {
-        return $this->getContext()->getConfig()->get( $this->subPartPath, $this->subPartNames );
-    }
-
-    public function process()
-    {
-        $context = $this->getContext();
-        $view = $this->getView();
-
-        try
-        {
-            $site = $context->getLocale()->getSite()->getCode();
-            $params = $this->getClientParams( $view->param() );
-
-            $context->getSession()->set( 'aimeos/catalog/slide/params/last/' . $site, $params );
-
-            parent::process();
-        }
-        catch( \Aimeos\Client\Html\Exception $e )
-        {
-            $error = array( $context->getI18n()->dt( 'client', $e->getMessage() ) );
-            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
-        }
-        catch( \Aimeos\Controller\Frontend\Exception $e )
-        {
-            $error = array( $context->getI18n()->dt( 'controller/frontend', $e->getMessage() ) );
-            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
-        }
-        catch( \Aimeos\MShop\Exception $e )
-        {
-            $error = array( $context->getI18n()->dt( 'mshop', $e->getMessage() ) );
-            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
-        }
-        catch( \Exception $e )
-        {
-            $error = array( $context->getI18n()->dt( 'client', 'A non-recoverable error occured' ) );
-            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
-            $this->logException( $e );
-        }
+//        dd('mincess');
+        $view->context = $this->getContext();
+        $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
+        $catid = $view->param('id');
+        $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
+        $catalogItem = $manager->getItem( $catid, $domains );
+        $view->point = "point";
+        //$catId = $view->param("id");
+        //$view->catId = $catId;
+        // $cat = $view->request('cat');
+        // $view->cat = $cat;
+        $this->addMetaItems( $catalogItem, $expire, $tags );
+        return $view;
     }
 
     public function getBody($uid = '')
@@ -91,7 +56,7 @@ class Standard
         if( ( $html = $this->getCached( 'body', $uid, $prefixes, $confkey ) ) === null )
         {
             $view = $this->getView();
-     $tplconf = 'client/html/catalog/slide/standard/template-body';
+            $tplconf = 'client/html/catalog/slide/standard/template-body';
             $default = 'catalog/slide/body-standard.php';
 
             try
@@ -100,7 +65,7 @@ class Standard
                 foreach( $this->getSubClients() as $subclient ) {
                     $html .= $subclient->setView( $view )->getBody( $uid );
                 }
-                $view->listBody = $html;
+                $view->slideBody = $html;
 
                 $html = $view->render( $this->getTemplatePath( $tplconf, $default ) );
                 $this->setCached( 'body', $uid, $prefixes, $confkey, $html, $this->tags, $this->expire );
@@ -110,22 +75,22 @@ class Standard
             catch( \Aimeos\Client\Html\Exception $e )
             {
                 $error = array( $context->getI18n()->dt( 'client', $e->getMessage() ) );
-                $view->listErrorList = $view->get( 'listErrorList', [] ) + $error;
+                $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
             }
             catch( \Aimeos\Controller\Frontend\Exception $e )
             {
                 $error = array( $context->getI18n()->dt( 'controller/frontend', $e->getMessage() ) );
-                $view->listErrorList = $view->get( 'listErrorList', [] ) + $error;
+                $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
             }
             catch( \Aimeos\MShop\Exception $e )
             {
                 $error = array( $context->getI18n()->dt( 'mshop', $e->getMessage() ) );
-                $view->listErrorList = $view->get( 'listErrorList', [] ) + $error;
+                $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
             }
             catch( \Exception $e )
             {
                 $error = array( $context->getI18n()->dt( 'client', 'A non-recoverable error occured' ) );
-                $view->listErrorList = $view->get( 'listErrorList', [] ) + $error;
+                $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
                 $this->logException( $e );
             }
 
@@ -181,13 +146,59 @@ class Standard
 
         return $html;
     }
-
-    public function addData( \Aimeos\MW\View\Iface $view, array &$tags = [], &$expire = null )
+    public function getSubClient( $type, $name = null )
     {
-        //dd('sdf');
-        $catId = $view->param('id');
-        $view->catId = $catId;
-
-        return $view;
+        return $this->createSubClient( 'catalog/slide/' . $type, $name );
     }
+
+    public function modifyBody( $content, $uid )
+    {
+        $content = parent::modifyBody( $content, $uid );
+
+        return $this->replaceSection( $content, $this->getView()->csrf()->formfield(), 'catalog.slide.csrf' );
+    }
+    public function process()
+    {
+        $context = $this->getContext();
+        $view = $this->getView();
+        $view->context = $context ;
+   //     dd('okay');
+        try
+        {
+            $site = $context->getLocale()->getSite()->getCode();
+            $params = $this->getClientParams( $view->param() );
+
+            $context->getSession()->set( 'aimeos/catalog/slide/params/last/' . $site, $params );
+
+            parent::process();
+        }
+        catch( \Aimeos\Client\Html\Exception $e )
+        {
+            $error = array( $context->getI18n()->dt( 'client', $e->getMessage() ) );
+            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
+        }
+        catch( \Aimeos\Controller\Frontend\Exception $e )
+        {
+            $error = array( $context->getI18n()->dt( 'controller/frontend', $e->getMessage() ) );
+            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
+        }
+        catch( \Aimeos\MShop\Exception $e )
+        {
+            $error = array( $context->getI18n()->dt( 'mshop', $e->getMessage() ) );
+            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
+        }
+        catch( \Exception $e )
+        {
+            $error = array( $context->getI18n()->dt( 'client', 'A non-recoverable error occured' ) );
+            $view->slideErrorList = $view->get( 'slideErrorList', [] ) + $error;
+            $this->logException( $e );
+        }
+    }
+
+    protected function getSubClientNames()
+    {
+        return $this->getContext()->getConfig()->get( $this->subPartPath, $this->subPartNames );
+    }
+
+
 }

@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Fruit Shop is new Html theme that we have designed to help you transform your store into a beautiful online showroom. This is a fully responsive Html theme, with multiple versions for homepage and multiple templates for sub pages as well" />
-    <meta name="keywords" content="Fruit,7uptheme" />
+    <meta name="description" content="Agribusiness est une plateforme B2B de promotion du secteur agricole au travers de la vente des produits et de l'accompagnement des entrepreneurs agricoles de catégories rurales, industrielle urbains etc." />
+    <meta name="keywords" content="Agribusiness,Agri-business, Agriculture, Afrique, Cameroun" />
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     @yield('aimeos_header')
-    <title>Agribusiness | Marché</title>
+    <title>Agribusiness </title>
 @yield('aimeos_styles')
 <!-- <link rel="stylesheet" type="text/css" href="css/rtl.css" media="all"/> -->
 </head>
@@ -87,7 +87,7 @@
                 <div class="container">
                     <nav class="main-nav main-nav1">
                         @yield('aimeos_nav')
-                        <a href="#" class="toggle-mobile-menu"><span></span></a>
+
                     </nav>
                 </div>
             </div>

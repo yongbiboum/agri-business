@@ -1,3 +1,9 @@
+<div class="breadcrumbs">
+    <ol class="breadcrumb">
+        <li><a href="/list">Mon Compte</a></li>
+        <li class="active">Mes Informations</li>
+    </ol>
+</div>
 <div align="center" style="margin-bottom: 10px ">
     <img width="100px" height="100px" src="/packages/assets/images/shop/user.png" alt="" class="">
 </div>
@@ -41,7 +47,7 @@
                 <select id="profession" class="form-control">
                     <option disabled selected><?= Auth::user()->profession?></option>
                 </select>
-                <select class="form-control" id="select" >
+                <select class="form-control" style="display: none" id="select" >
                     <option value="industriel">Industriel</option>
                     <option value="grossiste">Grossiste</option>
                     <option value="revendeur">Revendeur</option>
@@ -62,11 +68,13 @@
 </div>
 </div>
 <br />
+<div class="flex-containers">
 <div class="product-extra-link" align="center">
-    <a href="#" onclick="enable();disp()" class="addcart-link">Modifier</a>
+    <a href="#" onclick="enable();disp();" id="modif" class="addcart-link">Modifier</a>
 </div>
-<div class="product-extra-link" id="annuler" align="center" style="display: none">
-    <a href="#" onclick="enable();"  class="addcart-link">Modifier</a>
+<div class="product-extra-link" id="annuler" align="center" style="display: none; margin-left: 5px ">
+    <a href="" onclick="document.location.reload(true)"  style="background-color: red;" class="addcart-link">Annuler</a>
+</div>
 </div>
 <script src="/packages/assets/js/intlTelInput.js"></script>
 <script src="/packages/assets/js/utils.js"></script>
@@ -75,11 +83,21 @@
     window.intlTelInput(input);
 </script>
 <script>
-    document.getElementById("select").style.display= "none";
+
     function disp() {
         document.getElementById("annuler").style.display= "block";
+        document.getElementById("profession").style.display= "none";
+        //$('#modif').val("Valider") ;
     }
     function enable() {
         document.getElementById("name").disabled = false;
+        document.getElementById("email").disabled = false;
+        document.getElementById("naissance").disabled = false;
+        document.getElementById("compagnie").disabled = false;
+        document.getElementById("phone").disabled = false;
+        document.getElementById("select").style.display= "block";
+
+    }
+    function submit() {
     }
 </script>

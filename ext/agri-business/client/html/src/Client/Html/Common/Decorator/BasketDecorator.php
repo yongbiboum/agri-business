@@ -16,9 +16,10 @@ class BasketDecorator  extends \Aimeos\Client\Html\Common\Decorator\Base impleme
         $view = parent::addData( $view, $tags, $expire );
         $context = $this->getContext();
         $config = $context->getConfig();
-        $prodid = $view->param( 'd_prodid' );
-        //dd('into decorator');
-        dd($this->summaryBasket->getProducts());
-
+        $qte = (int)$view->param('b_prod')["0"]["quantity"];
+        $unite = $view->param( 'unite' );
+        $view->unite = $unite;
+      //  dd($view->param('b_prod')["0"]["quantity"]);
+        return $view;
     }
 }

@@ -207,6 +207,9 @@ class Standard
         $view->context = $this->getContext();
         $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
 
+        //$f_item = $view->param("f_items");
+        //dd($f_item);
+
         $view->catalogProducts = [] ;
         $manager = \Aimeos\MShop\Factory::createManager( $this->getContext(), 'catalog' );
 

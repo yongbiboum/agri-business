@@ -40,13 +40,13 @@ $mediaItems = $this->get( 'mediaItems', [] );
         <div class="gallery-control">
             <div class="carousel" data-visible="4">
                 <ul class="list-none">
-                    <li><a href="#" class="active"><img src="/packages/assets/images/product/fruit_24.jpg" alt=""/></a></li>
-                    <li><a href="#"><img src="/packages/assets/images/product/fruit_25.jpg" alt=""/></a></li>
-                    <li><a href="#"><img src="/packages/assets/images/product/fruit_26.jpg" alt=""/></a></li>
-                    <li><a href="#"><img src="/packages/assets/images/product/fruit_27.jpg" alt=""/></a></li>
-                    <li><a href="#"><img src="/packages/assets/images/product/fruit_28.jpg" alt=""/></a></li>
-                    <li><a href="#"><img src="/packages/assets/images/product/fruit_29.jpg" alt=""/></a></li>
-                    <li><a href="#"><img src="/packages/assets/images/product/fruit_23.jpg" alt=""/></a></li>
+                    <?php $medias = $this->productItem->getRefItems('media') ; ?>
+                    <?php foreach ( collect($medias)  as $id => $media) :
+                      //  dd($media);
+                        ?>
+
+                    <li><a href="<?= asset($media->getUrl()) ?>"><img src="<?= asset($media->getPreview())?>" alt=""/></a></li>
+                    <?php endforeach;?>
                 </ul>
             </div>
             <a href="#" class="prev"><i class="icon ion-ios-arrow-thin-left"></i></a>

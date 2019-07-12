@@ -1,6 +1,13 @@
 @extends('app')
 
 @section('aimeos_styles')
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/bootstrap.min.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/font-awesome.min.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/prettyPhoto.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/price-range.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/animate.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/main.css') }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset('packages/aimeos/shop/themes/elegance/responsive.css') }}" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">

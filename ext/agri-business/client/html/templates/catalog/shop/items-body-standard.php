@@ -46,7 +46,7 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
             $catnombre = (int)'1';
         ?>
     <div class="col-md-4 col-sm-6 col-xs-6">
-        <div class="item-product item-product-grid text-center">
+        <div class="item-product item-product-grid">
             <?php
 
             $mediaItem= collect($catalogItemId->getRefItems("media"))->first()->getUrl();
@@ -83,7 +83,7 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
                 $unité = 'Tonne' ;
                 $stocklevel = $stocklevel/1000 ;
             }
-            $url2=  route('agri_categorie', ["code"=>$catalogItemId->getCode(),"id"=>$catalogItemId->getId()]) ;
+            $url2=  route('agri_categorie', ["code"=>$catalogItemId->getCode(),"id"=>$catalogItemId->getId(),"f_items" => $catalogItemId->getId()]) ;
 
             /*$params = array( 'd_name' => $productItemid->getName( 'url' ), 'd_prodid' => $id );
 
@@ -97,32 +97,33 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 
             $url = $this->url( ($productItemid->getTarget() ?: $detailTarget ), $detailController, $detailAction, $params, [], $detailConfig );*/
             ?>
-            <div class="product-thumb" >
+            <div class="product-thumb" style="height: 140px; !important; width: 100%;">
                 <a href="<?= $url2 ?>" class="product-thumb-link rotate-thumb">
-                    <img src="<?= $mediaItem ?>" alt="">
-                    <img src="<?= $mediaItem ?>" alt="">
+                    <img src="<?= asset($mediaItem) ?>" alt="">
+                    <img src="<?= asset($mediaItem) ?>" alt="">
                 </a>
-                <a href="#" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
             </div>
-            <div class="product-info">
+            <div class="product-info" style="font-family: Roboto ;">
                 <a href="<?= $url2; ?>">
-                <h3 class="product-title">
+                <h3 style="color: #66cc33;" class="product-title">
                     <?= $enc->html( $catalogItemId->getName(), $enc::TRUST ); ?>
                 </h3>
-                <h5 >
+                <h5 style="color: #889999" >
                 Stock Total : <?= $enc->html( $stocklevel, $enc::TRUST ); ?> <?= $unité ?>
                 </h5>
-                <h5 >
+                <h5 style="color: #889999">
+
                     <?php if ($producteurs > (int)'1'):?>
-                    <?= $enc->html( $producteurs, $enc::TRUST ); ?> Producteurs
+                        Nombre de producteurs : <?= $enc->html( $producteurs, $enc::TRUST ); ?>
                     <?php else :?>
-                    <?= $enc->html( $producteurs, $enc::TRUST ); ?> Producteur
+                        Nombre de producteur : <?= $enc->html( $producteurs, $enc::TRUST ); ?>
                     <?php endif; ?>
             </h5>
                 </a>
+                 <h5 style="color: #889999">Prix moyen :   <?= $this->number($prices,0); ?> FCFA/KG </h5>
                 <div class="product-price" data-prodid="<?= $enc->attr( $id ); ?>"
                      data-prodcode="<?= $enc->attr( $catalogItemId->getCode() ); ?>">
-                    <ins class="color"> <h5 >Prix moyen :   <?= $this->number($prices,0); ?> FCFA /Kg </h5> </ins>
+
                 </div>
             </div>
         </div>

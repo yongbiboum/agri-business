@@ -204,7 +204,6 @@ class Standard
        // $this->addMetaItems( collect($catlist)->first(), $expire, $tags );
 
         $catid = $view->param( 'id' );
-//dd($catid);
         if($catid !== null ) {
             //dd($catid);
            // $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );

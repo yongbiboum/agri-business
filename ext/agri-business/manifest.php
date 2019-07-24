@@ -10,6 +10,7 @@ return array(
 		'ai-client-jsonapi',
 		'ai-controller-jobs',
 		'ai-controller-frontend',
+        'ai-laravel',
 	),
 	'include' => array(
 		'lib/custom/src',

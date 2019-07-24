@@ -16,6 +16,7 @@ return [
 	],
 
 	'page' => [
+	    'accueil' => ['catalog/shop'],
 	    'account-prod' => [ 'account/accountlist','account/producteur','catalog/filter','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','catalog/session' ],
         'account-index' => [ 'catalog/filter','account/accountlist','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],
         'account-components' => [ 'catalog/filter','account/commandes','account/composants','account/accountaside','catalog/nav','catalog/logo','catalog/slide','catalog/footer','account/profile','account/subscription','account/history','account/favorite','account/watch','basket/mini','catalog/session' ],

@@ -8,26 +8,7 @@
     <meta name="robots" content="noodp,index,follow" />
     <meta name='revisit-after' content='1 days' />
     <title>Agri Business | Accueil</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/ionicons.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/jquery.fancybox.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/jquery-ui.min.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/owl.carousel.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/owl.transitions.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/jquery.mCustomScrollbar.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/owl.theme.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/animate.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/libs/hover.css"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/color.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/theme.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/responsive.css" media="all"/>
-    <link rel="stylesheet" type="text/css" href="/packages/assets/css/browser.css" media="all"/>
+    @yield('aimeos_styles')
     <!-- <link rel="stylesheet" type="text/css" href="/packages/assets/css/rtl.css" media="all"/> -->
 </head>
 <body class="preload">
@@ -123,7 +104,7 @@
                             <li class="current-menu-item ">
                                 <a href="#">Accueil</a>
                             </li>
-                            <li><a href="/list">Nos produits</a></li>
+                            <li><a href="<?= route('accueil_categorie',["f_param" => "categories"])?>">Nos produits</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">A propos</a></li>
                             <li><a href="#">Contacts</a></li>
@@ -149,7 +130,7 @@
                             <h3 class="title30" style="color: #66cc33;">Au coeur de l'agribusiness africain</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
-                            <a href="#" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
+                            <a href="<?= route('accueil_categorie',["f_param" => "categories"])?>" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
                         </div>
                     </div>
                 </div>
@@ -162,7 +143,7 @@
                             <h3 class="title30" style="color: #66cc33;">Pour une agriculture de seconde génération</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
-                            <a href="/list" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
+                            <a href="<?= route('accueil_categorie',["f_param" => "categories"])?>" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
                         </div>
                     </div>
                 </div>
@@ -173,7 +154,7 @@
                             <h3 class="title30" style="color: #66cc33;" >Une croissance exponentielle du secteur primaire</h3>
                             <h2 class="title120 font-bold animated" data-animated="flash"></h2>
                             <a href="#" class="btn-arrow white" style="background-color: green">Je suis un Producteur</a>
-                            <a href="/list" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
+                            <a href="<?= route('accueil_categorie',["f_param" => "categories"])?>" class="btn-arrow white" style="background-color: red">Je suis un Client</a>
                         </div>
                     </div>
                 </div>
@@ -338,177 +319,10 @@
             <!-- End List Adv -->
 
             <!-- End Product Best Sale -->
-       <div class="container"> <div class="product-price-off">
+       <div class="container">
+           <div class="product-price-off">
             <div class="container">
-                <h2 class="title30 text-center font-bold">Catégorie de produits</h2>
-                <ul class="list-inline-block text-center title-tab-icon3">
-                    <li><a href="#pr1" data-toggle="tab"><img class="wobble-horizontal" src="/packages/assets/images/home/home1/fru1.png" alt=""><span>PROUITS SECS</span></a></li>
-                    <li><a href="#pr2" data-toggle="tab"><img class="wobble-horizontal" src="/packages/assets/images/home/home1/fru2.png" alt=""><span>FRUITS</span></a></li>
-                    <li class="active"><a href="#pr1" data-toggle="tab"><img class="wobble-horizontal" src="/packages/assets/images/home/home1/fru4.png" alt=""><span>LEGUMES</span></a></li>
-                    <li><a href="#pr2" data-toggle="tab"><img class="wobble-horizontal" src="/packages/assets/images/home/home1/fru5.png" alt=""><span>TUBERCULES</span></a></li>
-                </ul>
-                <div class="tab-content">
-                    <div id="pr1" class="tab-pane active">
-                        <div class="list-price-off clearfix">
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_12.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Conconut Chips</a><strong class="color pull-right">$20/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_01.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Apetito Pure Fruit Juice</a><strong class="color pull-right">$48/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_25.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Asian Banana</a><strong class="color pull-right">$53/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_21.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Fresh Meal Kit</a><strong class="color pull-right">$35/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_11.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Conconut Chips</a><strong class="color pull-right">$27/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_24.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Aurore Grape</a><strong class="color pull-right">$29/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <a href="#" class="btn-arrow color">Voir Tous</a>
-                        </div>
-                    </div>
-                    <!-- ENd Tab -->
-
-                    <div id="pr2" class="tab-pane">
-                        <div class="list-price-off">
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_02.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Conconut Chips</a><strong class="color pull-right">$20/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_03.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Apetito Pure Fruit Juice</a><strong class="color pull-right">$48/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_25.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Asian Banana</a><strong class="color pull-right">$53/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_04.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Fresh Meal Kit</a><strong class="color pull-right">$35/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_05.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Conconut Chips</a><strong class="color pull-right">$27/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                            <div class="item-product-price table">
-                                <div class="product-thumb">
-                                    <a href="detail.html" class="product-thumb-link zoom-thumb">
-                                        <img src="/packages/assets/images/product/fruit_06.jpg" alt="">
-                                    </a>
-                                    <a href="quick-view.html" class="quickview-link fancybox fancybox.iframe"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                </div>
-                                <div class="product-info">
-                                    <h3 class="product-title"><a href="detail.html">Aurore Grape</a><strong class="color pull-right">$29/1 Pound</strong></h3>
-                                    <p class="desc">Organic food consumption is rapidly increasing. The heightened interest in the global environment and a willingness to look</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center">
-                            <a href="#" class="btn-arrow color">View All</a>
-                        </div>
-                    </div>
-                    <!-- ENd Tab -->
+                @yield('aimeos_body')
                 </div>
             </div>
         </div>
@@ -519,7 +333,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="banner-choise8 text-left"><a href="#" class="wobble-horizontal"><img src="/packages/assets/images/home/home2/choise1.png" alt="" /></a></div>
+                    <div class="banner-choise8 text-left"><a href="#" class="wobble-horizontal"><img src="/packages/assets/images/homme2.png" alt="" /></a></div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="choise-policy3">
@@ -553,11 +367,11 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="banner-choise8 text-right"><a href="#" class="wobble-horizontal"><img src="/packages/assets/images/home/home2/choise2.png" alt="" /></a></div>
+                    <div class="banner-choise8 text-right " align="center"><a href="#" class="wobble-horizontal"><img src="/packages/assets/images/home/home2/choise2.png" alt="" /></a></div>
                 </div>
             </div>
         </div>
-       </div>
+
         <!-- End Why Choise -->
 
         <div class="client-say2 text-center box-parallax">
@@ -568,30 +382,30 @@
                     <div class="wrap-item" data-transition="fade" data-pagination="false" data-navigation="true" data-itemscustom="[[0,1]]">
                         <div class="item-client2">
                             <div class="client-thumb">
-                                <a href="#" tabindex="0"><img src="/packages/assets/images/home/home1/av1.png" alt=""></a>
+                                <a href="#" tabindex="0"><img src="/packages/assets/images/steve.png" alt=""></a>
                             </div>
                             <div class="client-info">
-                                <h3 class="title18"><a href="#" class="color">BOREL NDZOGANG</a></h3>
+                                <h3 class="title18"><a href="#" class="color">STEVE YONG</a></h3>
                                 <span class="white">Grossiste marché central</span>
                                 <p class="desc white">“La plateforme d'agribusiness me permet d'avoir toujours en stock des produits de choix et m'a permis de booster mon chiffre d'affaire ”</p>
                             </div>
                         </div>
                         <div class="item-client2">
                             <div class="client-thumb">
-                                <a href="#" tabindex="0"><img src="/packages/assets/images/home/home1/av2.png" alt=""></a>
+                                <a href="#" tabindex="0"><img src="/packages/assets/images/borel.png" alt=""></a>
                             </div>
                             <div class="client-info">
-                                <h3 class="title18"><a href="#" class="color">KEVIN TEGUIA</a></h3>
+                                <h3 class="title18"><a href="#" class="color">BOREL NDZOGANG</a></h3>
                                 <span class="white">Agro industriel, jus natures</span>
                                 <p class="desc white">“Grace à la plateforme j'ai des fruits frais toujours disponible pour la fabrication de mes jus, je suis à l'abris des ruprutres de stock et des frais de l'importation et des grossistes couteux ”</p>
                             </div>
                         </div>
                         <div class="item-client2">
                             <div class="client-thumb">
-                                <a href="#" tabindex="0"><img src="/packages/assets/images/home/home1/av3.png" alt=""></a>
+                                <a href="#" tabindex="0"><img src="/packages/assets/images/nelly.png" alt=""></a>
                             </div>
                             <div class="client-info">
-                                <h3 class="title18"><a href="#" class="color">NYA MARCEL</a></h3>
+                                <h3 class="title18"><a href="#" class="color">NELLY KOUGOUM</a></h3>
                                 <span class="white">Agriculteur</span>
                                 <p class="desc white">“Grace à agribusiness ma famille et moi à muyuka pouvant vivre de notre culture en écoulant facilement et rapidement nos productions vers les grandes villes.”</p>
                             </div>
@@ -639,34 +453,34 @@
                 <div class="brand-slider">
                     <div class="wrap-item" data-pagination="false" data-autoplay="true" data-itemscustom="[[0,2],[480,3],[768,4],[990,5]]">
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br1.png" alt="" /></a>
+                            <a href="http://www.chococamtigerbrands.com/fr/" class="pulse-grow"><img src="/packages/assets/images/chococam.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br2.png" alt="" /></a>
+                            <a href="http://www.somdiaa.com/groupe/filiales/sosucam/" class="pulse-grow"><img src="/packages/assets/images/sosucam.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br3.png" alt="" /></a>
+                            <a href="polytechnique.cm" class="pulse-grow"><img src="/packages/assets/images/ensp.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br4.png" alt="" /></a>
+                            <a href="cicc.cm" class="pulse-grow"><img src="/packages/assets/images/cicc.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br5.png" alt="" /></a>
+                            <a href="http://www.lesbrasseriesducameroun.com/" class="pulse-grow"><img src="/packages/assets/images/sabc.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br1.png" alt="" /></a>
+                            <a href="http://www.chococamtigerbrands.com/fr/" class="pulse-grow"><img src="/packages/assets/images/chococam.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br2.png" alt="" /></a>
+                            <a href="http://www.somdiaa.com/groupe/filiales/sosucam/" class="pulse-grow"><img src="/packages/assets/images/sosucam.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br3.png" alt="" /></a>
+                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/minader.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br4.png" alt="" /></a>
+                            <a href="http://www.lesbrasseriesducameroun.com/" class="pulse-grow"><img src="/packages/assets/images/sabc.png" alt="" /></a>
                         </div>
                         <div class="item-brand">
-                            <a href="#" class="pulse-grow"><img src="/packages/assets/images/home/home1/br5.png" alt="" /></a>
+                            <a href="http://www.somdiaa.com/groupe/filiales/sosucam/" class="pulse-grow"><img src="/packages/assets/images/sosucam.png" alt="" /></a>
                         </div>
                     </div>
                 </div>
@@ -683,7 +497,8 @@
                         <div class="col-md-4 col-sm-4 col-xs-12">
                             <div class="footer-box2">
                                 <a href="#" class=""><h2 class="title18 font-bold color"> A propos d'agribusiness</h2></a>
-                                <p class="desc white">Excellence in quality and service is the hallmark of all operations performed at Fruit. Firmly standing by its business values, Fruit is active in manufacture and sale of textile </p>
+                                <p class="desc white">Excellence et la qualité de service dans le domaine agricole et la très grande  expertise de nos professionels
+                                    font de nous un partenaire de choix et indispensable pour tout entrepreneur agricole ou acteur de ce marché.</p>
                             </div>
                             <div class="footer-box2 payment-method">
                                 <a href="" class=""><h2 class="title18 font-bold color">Moyens de paiement</h2></a>
@@ -735,7 +550,7 @@
                         <li><a href="#" class="white">Nous contacter</a></li>
                     </ul>
                     <p class="copyright2 desc white">Agribusiness © 2019 . Tous droits réservés.</p>
-                    <p class="design2 desc white">Design par <a href="#" class="color">nh-itc.com</a></p>
+                    <p class="design2 desc white">Design par <a href="www.nh-itc.com" class="color">nh-itc.com</a></p>
                 </div>
             </div>
         </div>
@@ -765,18 +580,6 @@
 </div>
 <!-- End Preload -->
 </div>
-<script type="text/javascript" src="/packages/assets/js/libs/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/bootstrap.min.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/jquery.fancybox.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/jquery-ui.min.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/jquery.jcarousellite.min.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/jquery.elevatezoom.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/jquery.mCustomScrollbar.min.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/slick.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/popup.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/timecircles.js"></script>
-<script type="text/javascript" src="/packages/assets/js/libs/wow.js"></script>
-<script type="text/javascript" src="/packages/assets/js/theme.js"></script>
+@yield('aimeos_scripts')
 </body>
 </html>

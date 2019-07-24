@@ -93,7 +93,7 @@ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
         $urls = array(
             'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $this->detailProductItem->getId() ) + $params, $favConfig ),
         );
-
+        $unit = $this->detailProductItem->getUnite();
         $disabled = '';
         $curdate = date( 'Y-m-d H:i:00' );
 
@@ -292,7 +292,7 @@ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
                             $stock = $cntl->searchItems( $filter );
                             $stocklevel = (float)collect($stock)->first()->getStockLevel();
                             $unite = 'KG';
-                            $unit = 'KG';
+                            $unit = $product->getUnite();
                             if ($stocklevel > (float)'1000.0'){
                                 $unite = 'Tonnes';
                                 $stocklevel = $stocklevel/1000 ;

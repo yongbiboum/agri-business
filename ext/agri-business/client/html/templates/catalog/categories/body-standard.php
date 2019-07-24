@@ -16,7 +16,7 @@
                     $tree=$manager->getTree($catnode->getId(),[],\Aimeos\MW\Tree\Manager\Base::LEVEL_TREE)->getNode()->getChildren();
                     $nbre = collect($tree)->count();
 
-                    $url = route('agri_categories', ["id"=>$catnode->getId() , "code"=>$catnode->getCode(), "f_cat" => $catnode->getId() ]);
+                    $url = route('agri_categories', ["id"=>$catnode->getId() , "code"=>$catnode->getCode(), "f_cat" => $catnode->getId(), "f_param" => "liste" ]);
                     $catItem = $manager->getItem($catnode->getId(),['media']);
                     $icon = collect($catItem->getRefItems("media"))->first()->getUrl();
                    // dd($icon);
@@ -37,14 +37,14 @@
         <div class="widget widget-tags" id="tags">
             <h2 class="title18 title-widget font-bold">Recherche par Tags</h2>
             <ul class="wg-list-tabs list-inline-block">
-                <li><a href="<?=route('recherche', ['f_search' => "Tomates"] ); ?>">Tomates</a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Banane"] ); ?>">Banane</a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Sorgho"] ); ?>">Sorgho</a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Organique"] ); ?>">Organique </a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Vert"] ); ?>">Vert</a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Sec"] ); ?>">Sec</a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Légumes"] ); ?>">Légumes</a></li>
-                <li><a href="<?=route('recherche', ['f_search' => "Naturel"] ); ?>">Naturel </a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Tomates" , 'f_param' => 'nombre' ] ); ?>">Tomates</a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Banane", 'f_param' => 'nombre' ] ); ?>">Banane</a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Sorgho", 'f_param' => 'nombre' ] ); ?>">Sorgho</a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Organique", 'f_param' => 'nombre' ] ); ?>">Organique </a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Vert", 'f_param' => 'nombre']  ); ?>">Vert</a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Sec", 'f_param' => 'nombre']  ); ?>">Sec</a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Légumes", 'f_param' => 'nombre']  ); ?>">Légumes</a></li>
+                <li><a href="<?=route('recherche', ['f_search' => "Naturel", 'f_param' => 'nombre']  ); ?>">Naturel </a></li>
             </ul>
         </div>
         <!-- End WIdget -->

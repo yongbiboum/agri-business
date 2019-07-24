@@ -15,7 +15,7 @@ return array(
 			$table->addColumn( 'id', 'integer', array( 'autoincrement' => true, 'unsigned' => true ) );
 			$table->addColumn( 'superuser', 'smallint', array( 'default' => 0 ) );
 			$table->addColumn( 'siteid', 'integer', array( 'notnull' => false ) );
-			$table->addColumn( 'label', 'string', array( 'length' => 255, 'default' => '' ) );
+			$table->addColumn( 'label', 'string', array( 'length' => 255, 'default' => '','notnull' => false ) );
 			$table->addColumn( 'name', 'string', array( 'length' => 255 ) );
 			$table->addColumn( 'remember_token', 'string', array( 'length' => 100, 'notnull' => false ) );
 			$table->addColumn( 'salutation', 'string', array( 'length' => 8, 'default' => '' ) );
@@ -32,7 +32,7 @@ return array(
 			$table->addColumn( 'state', 'string', array( 'length' => 200, 'default' => '' ) );
 			$table->addColumn( 'langid', 'string', array( 'length' => 5, 'notnull' => false ) );
 			$table->addColumn( 'countryid', 'string', array( 'length' => 2, 'notnull' => false, 'fixed' => true ) );
-			$table->addColumn( 'telephone', 'string', array( 'length' => 32, 'default' => '' ) );
+			$table->addColumn( 'telephone', 'string', array( 'length' => 32, 'default' => '','notnull' => false ) );
 			$table->addColumn( 'telefax', 'string', array( 'length' => 32, 'default' => '' ) );
 			$table->addColumn( 'website', 'string', array( 'length' => 255, 'default' => '' ) );
 			$table->addColumn( 'email', 'string', array( 'length' => 255 ) );

@@ -65,9 +65,9 @@
                         </div>
                         <div class="col-md-8 col-sm-8 col-xs-12">
                             <ul class="info-account list-inline-block pull-right">
-                                @if (session('status')):
+                                @if (session('status'))
                                 <li><a href="#"><span class="color"><i class="fa fa-user-o"></i></span>Mon Compte</a></li>
-                                @else :
+                                @else
                                 <li><a href="/login"><span class="color"><i class="fa fa-key"></i></span>Connexion - Inscription</a></li>
                                 @endif
                             </ul>
@@ -88,7 +88,7 @@
                         <div class="col-md-2 col-sm-2 col-xs-12">
                             <div class="logo logo1">
                                 <h1 class="hidden">Agri business</h1>
-                                <a href="index.html"><img class="image" src="/packages/assets/images/home/home2/agri.png" alt="" /></a>
+                                <a href="/"><img class="image" src="/packages/assets/images/home/home2/agri.png" alt="" /></a>
                             </div>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-12">
@@ -105,7 +105,7 @@
                             <li class="current-menu-item ">
                                 <a href="/">Accueil</a>
                             </li>
-                            <li><a href="/list">Nos produits</a></li>
+                            <li><a href="<?= route('accueil_categorie',["f_param" => "categories"])?>">Nos produits</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">A propos</a></li>
                             <li><a href="#">Contacts</a></li>

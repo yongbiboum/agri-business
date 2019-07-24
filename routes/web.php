@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+  //  return view('shop::catalog.welcome');
+//});
 
 Auth::routes();
 
@@ -22,9 +22,17 @@ Route::match( array( 'GET', 'POST' ), 'catlist/{code}', array(
     'as' => 'agri_categorie',
     'uses' => 'CatalogController@categoriesAction'
 ));
+Route::match( array( 'GET', 'POST' ), '/', array(
+    'as' => 'accueil',
+    'uses' => 'AccueilController@indexAction'
+));
 Route::match( array( 'GET', 'POST' ), 'categorie/{code}', array(
     'as' => 'agri_categories',
     'uses' => 'CatalogController@listsAction'
+));
+Route::match( array( 'GET', 'POST' ), '/produits', array(
+    'as' => 'accueil_categorie',
+    'uses' => 'AccueilController@listAction'
 ));
 
 Route::match( array( 'GET', 'POST' ), '/search', array(

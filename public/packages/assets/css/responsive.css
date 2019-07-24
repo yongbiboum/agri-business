@@ -459,6 +459,9 @@
   .banner-choise8 {
     text-align: center;
   }
+    .banner-choise8.text-left {
+    margin-top: 45px;
+  }
   .brand-slider8 .item-brand2 {
     width: auto;
   }

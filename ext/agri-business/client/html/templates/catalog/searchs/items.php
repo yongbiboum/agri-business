@@ -44,9 +44,11 @@ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
         $productItemid = $manager2->getItem($productItem->getId(),['media','text','price']);
         $productText = $productItemid->getRefItems("text");
         $collection = new \Illuminate\Support\Collection();
+        $stocklevel = (float)'0';
+        $priceUrl = (int)'0' ;
+        $variete = $productItem->getVariete();
+        $localite = $productItem->getLocalite();
         foreach ($productText as $id => $ptext):{
-            if ($ptext->getLabel()=="Variété"){ $variete = $ptext->getContent(); }
-            if ($ptext->getLabel()=="Localité"){ $localite = $ptext->getContent(); }
             if ($ptext->getLabel()=="Détails"){ $Détails = $ptext->getContent(); }
             if ($ptext->getLabel()=="Détail"){ $Détails = $ptext->getContent(); }
         }
@@ -54,10 +56,20 @@ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
         $cntl = \Aimeos\Controller\Frontend\Factory::createController( $this->context, 'stock' );
         $filter = $cntl->addFilterCodes( $cntl->createFilter(), [$productItem->getCode()] );
         $stockItems = $cntl->searchItems( $filter );
-        $stocklevel = (float)collect($stockItems)->first()->getStockLevel();
+        if(collect($stockItems)->first()){
+            $stocklevel = (float)$stocklevel + (float)collect($stockItems)->first()->getStockLevel();
+        }
+        else{
+            $stocklevel =0;
+        }
 
         $price = $productItemid->getRefItems( 'price', null, 'default' );
-        $priceUrl= collect($price)->first()->getValue() ;
+        if(collect($price)->first()){
+            $priceUrl= $priceUrl + collect($price)->first()->getValue() ;
+        }
+        else{
+            $priceUrl = 0 ;
+        }
 
         $urls = array(
             'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $productItem->getId() ) + $parame, $favConfig ),
@@ -76,16 +88,19 @@ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
         //dd($localite);
         $params = array( 'd_name' => $productItem->getName( 'url' ), 'd_prodid' => $productItem->getId() );
         $url = $this->url( ($productItem->getTarget() ?: $detailTarget ), $detailController, $detailAction, $params, [], $detailConfig );
-
+        $media="";
+        if(collect($productItemid->getRefItems("media"))->first()){
+            $media = collect($productItemid->getRefItems("media"))->first()->getUrl();
+        }
         ?>
 
         <div class="col-md-4 col-sm-6 col-xs-6">
             <div class="item-product item-product-grid ">
 
-                <div class="product-thumb" style="height: 140px;!important ; width: 249px; " >
+                <div class="product-thumb" style="height: 140px;!important ; width: 100%; " >
                     <a href="<?= $url ?>" class="product-thumb-link rotate-thumb">
-                        <img src="<?= asset(collect($productItemid->getRefItems("media"))->first()->getUrl()) ?>" alt="">
-                        <img src="<?= asset(collect($productItemid->getRefItems("media"))->first()->getUrl()) ?>" alt="">
+                        <img src="<?= asset($media) ?>" alt="">
+                        <img src="<?= asset($media) ?>" alt="">
                     </a>
                 </div>
                 <div class="product-info">
@@ -123,6 +138,6 @@ $favConfig = $this->config( 'client/html/account/favorite/url/config', [] );
     <?php endforeach;
 else:
     ?>
-    <h2 class="text-center"> Aucun produit correspondant à <?= $this->input ?> !!!</h2>
+    <h2 style="color: #66cc33" class="text-center"> Aucun produit disponible correspondant à "<?= $this->input ?>"  !!!</h2>
 
 <?php endif; ?>

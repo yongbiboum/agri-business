@@ -26,6 +26,7 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 <?php
 $conf = $productItem->getConfig(); $css = ( isset( $conf['css-class'] ) ? $conf['css-class'] : '' );
 $params = array( 'd_name' => $productItem->getName( 'url' ), 'd_prodid' => $id );
+$text = "";
 if( $position !== null ) { $params['d_pos'] = $position++; }
     $prices = $productItem->getRefItems( 'price', null, 'default' );
     $priceUrl=((collect($prices)->first())!==null)? collect($prices)->first()->getValue() : $text ;
@@ -35,7 +36,11 @@ $url = $this->url( ($productItem->getTarget() ?: $detailTarget ), $detailControl
 ?>
 
     <?php $medias= $productItem->getRefItems( 'media', 'default', 'default' )  ?>
-    <?php $mediaUrl = $enc->attr( $this->content( collect($medias)->first()->getPreview() ) ); ?>
+    <?php
+    if(collect($medias)->first()){
+        $mediaUrl = $enc->attr( $this->content( collect($medias)->first()->getPreview() ) );
+    }
+    ?>
 
     <div class="col-md-4 col-sm-6 col-xs-6">
         <div class="item-product item-product-grid text-center">

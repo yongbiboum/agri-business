@@ -47,13 +47,19 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
     $text='';
 
     foreach($productItems as $id => $productItem) :
-        $manager2 = \Aimeos\MShop\Factory::createManager( $this->context, 'product' );
-        $productItemid = $manager2->getItem($productItem->getId(),['media','text','price']);
+        $domains = array( 'media', 'price', 'text', 'attribute', 'product', 'product/property' );
+        $manager2 = \Aimeos\Controller\Frontend\Factory::createController( $this->context, 'product' );
+        $productItemid = $manager2->getItem($productItem->getId(),$domains);
+        //dd($productItem);
         $productText = $productItemid->getRefItems("text");
         $collection = new \Illuminate\Support\Collection();
+        $stocklevel = (float)'0';
+        $stocklevel = (float)'0';
+        $priceUrl = (int)'0' ;
+        $variete = $productItem->getVariete();
+        $localite = $productItem->getLocalite();
+        $unit = $productItem->getUnite();
         foreach ($productText as $id => $ptext):{
-            if ($ptext->getLabel()=="Variété"){ $variete = $ptext->getContent(); }
-            if ($ptext->getLabel()=="Localité"){ $localite = $ptext->getContent(); }
             if ($ptext->getLabel()=="Détails"){ $Détails = $ptext->getContent(); }
             if ($ptext->getLabel()=="Détail"){ $Détails = $ptext->getContent(); }
         }
@@ -61,10 +67,19 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
         $cntl = \Aimeos\Controller\Frontend\Factory::createController( $this->context, 'stock' );
         $filter = $cntl->addFilterCodes( $cntl->createFilter(), [$productItem->getCode()] );
         $stockItems = $cntl->searchItems( $filter );
-        $stocklevel = (float)collect($stockItems)->first()->getStockLevel();
-
+        if(collect($stockItems)->first()){
+            $stocklevel = (float)$stocklevel + (float)collect($stockItems)->first()->getStockLevel();
+        }
+        else{
+            $stocklevel =0;
+        }
         $price = $productItemid->getRefItems( 'price', null, 'default' );
-        $priceUrl= collect($price)->first()->getValue() ;
+        if(collect($price)->first()){
+            $priceUrl= $priceUrl + collect($price)->first()->getValue() ;
+        }
+        else{
+            $priceUrl = 0 ;
+        }
 
         //$pin = $this->url( $pinTarget, $pinController, $pinAction, array( 'pin_action' => 'add', 'pin_id' => $productItem->getId() ) , $pinConfig ) ;
 
@@ -84,6 +99,11 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
         $urls = array(
             'favorite' => $this->url( $favTarget, $favController, $favAction, array( 'fav_action' => 'add', 'fav_id' => $productItem->getId() ) + $parame, $favConfig ),
         );
+        $media = "";
+        if (collect($productItem->getRefItems("media"))->first()){
+            $media = collect($productItem->getRefItems("media"))->first()->getUrl();
+        }
+
 
         ?>
         <div class="modal fade" id="favoris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -97,7 +117,7 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
                         </button>
                     </div>
                     <div class="modal-body">
-                        <h6 class=""><?=$variete?> ajouté avec succès à vos produit favoris</h6>
+                        <h6 class=""><?=$productItem->getName()?> ajouté avec succès à vos produit favoris</h6>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
@@ -111,8 +131,8 @@ $pinConfig = $this->config( 'client/html/catalog/session/pinned/url/config', [] 
 
                  <div class="product-thumb" style="height: 140px;!important ; width: 100%; " >
                   <a href="<?= $url ?>" class="product-thumb-link rotate-thumb">
-                      <img src=" <?= asset(collect($productItem->getRefItems("media"))->first()->getUrl()) ?>" alt="">
-                      <img src=" <?= asset(collect($productItem->getRefItems("media"))->first()->getUrl()) ?>" alt="">
+                      <img src=" <?= asset($media) ?>" alt="">
+                      <img src=" <?= asset($media) ?>" alt="">
                   </a>
             </div>
             <div class="product-info" style="font-family: Roboto ;">

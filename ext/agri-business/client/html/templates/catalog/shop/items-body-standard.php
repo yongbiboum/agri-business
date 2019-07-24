@@ -28,10 +28,12 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
 ?>
     <?php
     $catalogList = $this->catalogList ;
+    if ($catalogList):
     $text='';
-
     ?>
-    <?php foreach($catalogList as $id => $catalogItem) :
+    <?php
+
+    foreach($catalogList as $id => $catalogItem) :
         $manager = \Aimeos\MShop\Factory::createManager( $this->context, 'catalog' );
         $catid = $catalogItem->getId();
         $catalogItemId = $manager->getItem($catid,['media','text','price']);
@@ -48,8 +50,12 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
     <div class="col-md-4 col-sm-6 col-xs-6">
         <div class="item-product item-product-grid">
             <?php
+            $mediaItem ="";
+            if (collect($catalogItemId->getRefItems("media"))->first()){
 
-            $mediaItem= collect($catalogItemId->getRefItems("media"))->first()->getUrl();
+                $mediaItem = collect($catalogItemId->getRefItems("media"))->first()->getUrl();
+
+            }
             $manager2 = \Aimeos\Controller\Frontend\Factory::createController(  $this->context, 'product' );
             $filter = $manager2->createFilter( 'relevance', '+', 0, 9 );
             $filter = $manager2->addFilterCategory( $filter, $catid );
@@ -61,11 +67,20 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
                 $cntl = \Aimeos\Controller\Frontend\Factory::createController( $this->context, 'stock' );
                 $filter = $cntl->addFilterCodes( $cntl->createFilter(), [$product->getCode()] );
                 $stockItems = $cntl->searchItems( $filter );
-                $stocklevel = (float)$stocklevel + (float)collect($stockItems)->first()->getStockLevel();
+                if(collect($stockItems)->first()){
+                    $stocklevel = (float)$stocklevel + (float)collect($stockItems)->first()->getStockLevel();
+                }
+                else{
+                    $stocklevel =0;
+                }
                 $producteurs = (int)$producteurs + (int)'1';
                 $price = $product->getRefItems( 'price', null, 'default' );
-                $priceUrl= $priceUrl + collect($price)->first()->getValue() ;
-
+                if(collect($price)->first()){
+                    $priceUrl= $priceUrl + collect($price)->first()->getValue() ;
+                }
+                else{
+                    $priceUrl = 0 ;
+                }
             endforeach;
             if($producteurs!==(int)'0'):{
                 $prices = $priceUrl/$producteurs ;
@@ -129,6 +144,9 @@ $basketParams = ( $basketSite ? ['site' => $basketSite] : [] );
         </div>
     </div>
 
-    <?php else: ?>
     <?php endif; ?>
     <?php endforeach; ?>
+    <?php else: ?>
+        <h5 style="color: #66cc33"> Aucune catégorie disponible pour l'instant ...</h5>
+    <?php endif; ?>
+
